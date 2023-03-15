@@ -73,11 +73,14 @@ Daily Work Log:
 - Initialized css stylesheet & connected to index.html & tested to make sure connection is complete
 - Implemented temporary smaller db to begin working on functions. 
 - Created fetch and succesfully accessed db data
+- created drop down menus to select ingredients
+
+
 
 PENDING GOALS: 
+- write functions for filters
 - implement remainder of database 
-- set up functionality 
-- create style attributes for display content
+- create style attributes for display content nicely
 
 
 

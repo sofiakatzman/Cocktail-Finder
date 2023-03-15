@@ -3,14 +3,15 @@
     <head>
     <link href="stylesheet.css" rel="stylesheet">
         <title>Cocktail Recipie Finder</title>
-        <body>
-            <h2> Let's start with what ingredients you have on hand!</h2>
-            <h3> Please select up to 3 ingredients. </h3>
-        
-        
-            <h4>Please pick your alchohol <base href=""></h4>
-            <select>
-                <option value="empty">I don't have one! </option>
+        <body> 
+            <h2> Let's make a cocktail!</h2>
+            <h3> Please select any of these ingredients that you may have on hand: </h3>
+            
+            
+        <form>
+                <label for="dropdownSpiritBase">Do you have any of these spirit bases?</label>
+                <select id="dropdownSpiritBase">
+                <option value="empty">I don't have any of these! </option>
                 <option value="vodka">Vodka</option>
                 <option value="tequila">Tequila</option>
                 <option value="chapagne">Champagne</option>
@@ -18,24 +19,22 @@
                 <option value="dark rum">Dark Rum</option>
                 <option value="gin">Gin</option>
             </select>
+       
 
-            <br>
-              
-            <h4>Please pick your supporting alchohol!</h4>
-
-            <select>
-                <option value="empty">I don't have one!</option>
+            <br><br>
+            <label for="dropdownSpirit2">Do you have any of these supporting spirits?</label>
+            <select id="dropdownSpirit2">
+                <option value="empty">I don't have any of these!</option>
                 <option value="grenadine">Grenadine</option>
                 <option value="campari">Campari</option>
                 <option value="cointreau">Cointreau</option>
             </select>
         
-            <br>
+            <br><br>
             
-            <h4>Please pick your mixer!</h4>
-
-            <select>
-                <option value="empty">I don't have one!</option>
+            <label for="dropdownMixer">Any of these mixers in your fridge?</label>
+            <select id="dropdownMixer">
+                <option value="empty">I don't have any of these!</option>
                 <option value="orange">Orange Juice</option>
                 <option value="cranberry">Cranberry Juice</option>
                 <option value="grapefruit">Grapefruit</option>
@@ -45,32 +44,28 @@
 
             </select>
 
-            <br>
-
-            <h4>Got any lemons or limes?</h4>
-
-            <select>
-                <option value="empty">I don't have one!</option>
+            <br><br>
+            <label for="dropdownLemonLime">Do you have any lemons or limes?</label>
+            <select id="dropdownLemonLime">
+                <option value="empty">I don't have any of these!</option>
                 <option value="lemon">Lemon</option>
                 <option value="lime">Lime</option>
             </select>
         
-            <br>
+            <br><br>
 
-            <h4>Please pick a garnish!</h4>
-
-            <select>
+            <label for="dropdownGarnish">Do you have any of these garnishes?</label>
+            <select id="dropdownGarnish">
                 <option value="empty">I don't have any of these!</option>
                 <option value="orange">Orange</option>
                 <option value="lime">Pineapple</option>
                 <option value="orange">Grapefruit</option>
             </select>
         
-            <br>
+            <br><br>
 
-            <h4>Do you have any of these?</h4>
-
-            <select>
+            <label for="dropdownGarnish2">How about any of these bonus ingredients?</label>
+            <select id="dropdownGarnish2">
             <option value="empty">I don't have any of these!</option>
             <option value="cocktail cherry">Cocktail Cherry</option> 
             <option value="sugar rim">Sugar</option>      
@@ -78,7 +73,10 @@
             </select>   
         
         <br><br>
-            <button type="button">Show me what I can make!</button>
+
+    </form>
+
+        <button type="button">Show me what I can make!</button>
         </body>
 
 

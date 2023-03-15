@@ -18,8 +18,9 @@ const url = "http://localhost:3000/recipies"
 
 fetch(url)
   .then(response => response.json())
-  .then(data => {
-    console.log(data); 
-  })
+  .then(data => getRecipiesByFilter(data))
   .catch(error => console.error(error));
 
+function getRecipiesByFilter(data){
+    console.log(data)
+}
