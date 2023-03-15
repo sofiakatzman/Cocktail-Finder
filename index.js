@@ -14,8 +14,12 @@
 //night mode will change the css class to an inverted design that is tbd 
 //night mode will be availabel via a button or switch - tbd 
 
+const url = "http://localhost:3000/recipies"
 
-function testingConnection(){
-    console.log("Connected to HTML!")
-}
+fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    console.log(data); 
+  })
+  .catch(error => console.error(error));
 

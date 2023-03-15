@@ -51,7 +51,7 @@ Source URLs can be found in //FILE NAME HERE TBD//
 
 ## Acknowledgement
 
-Thank you to //ENTERBLOGNAMEHERE// for their incredible blog from where the recipes and photographs used in this app are from. Their contnt contributions have made this application possible. 
+Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are from. Their contnt contributions have made this application possible. 
 
 
 ## Support
@@ -67,7 +67,20 @@ This is my initial README template to be updated closer to project completion.
 Last Update: 3/15/23
 
 Daily Work Log: 
-3/15/23 
+3/15/23 - GOAL: Initialize all files(html, css, js, db)
 - Created README, index.js, and index.html files. 
 - Initialized basic body for html. Connected js page to HTML via script tag & tested to make sure connection is complete
 - Initialized css stylesheet & connected to index.html & tested to make sure connection is complete
+- Implemented temporary smaller db to begin working on functions. 
+- Created fetch and succesfully accessed db data
+
+PENDING GOALS: 
+- implement remainder of database 
+- set up functionality 
+- create style attributes for display content
+
+
+
+** considering new feature : allow a "no added sugar" option by filtering simplesyrup:false only 
+
+
