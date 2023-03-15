@@ -1,3 +1,12 @@
 h3 {
- color: pink;   
+ color: green;   
 }
+
+#app-header {
+    display: flex;
+    justify-content: center;
+    background: #515DA2;
+    opacity: .8;
+    height: 7rem;
+    padding: 1rem;
+  }
