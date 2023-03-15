@@ -14,13 +14,45 @@
 //night mode will change the css class to an inverted design that is tbd 
 //night mode will be availabel via a button or switch - tbd 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // code to be executed after the DOM is loaded
+  });
+
 const url = "http://localhost:3000/recipies"
 
 fetch(url)
   .then(response => response.json())
   .then(data => getRecipiesByFilter(data))
-  .catch(error => console.error(error));
+  .catch(error => console.error(error))
 
 function getRecipiesByFilter(data){
     console.log(data)
 }
+
+const form = document.querySelector('form')
+const dropdown = document.querySelector('#dropdown')
+
+
+const dropdownSpiritBase = document.querySelector('#dropdownSpiritBase')
+const dropdownSpirit2 = document.querySelector('#dropdownSpirit2')
+const dropdownMixer = document.querySelector('#dropdownMixer')
+const dropdownLemonLime = document.querySelector('#dropdownLemonLime')
+const dropdownGarnish = document.querySelector('#dropdownGarnish')
+const dropdownGarnish2 = document.querySelector('#dropdownGarnish2')
+const submitButton = document.querySelector('#submitButton')
+
+form.addEventListener('submit', (event) => {
+  event.preventDefault()
+  const selectedSpiritBase = dropdownSpiritBase.value
+  const selectedSpirit2 = dropdownSpirit2.value
+  const selectedMixer = dropdownMixer.value
+  const selectedLemonLime = dropdownLemonLime.value
+  const selectedGarnish = dropdownGarnish.value
+  const selectedGarnish2 = dropdownGarnish2.value
+
+  console.log(selectedSpiritBase + selectedSpirit2 + selectedMixer + selectedLemonLime + selectedGarnish + selectedGarnish2)
+
+})
+
+
+  
