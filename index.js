@@ -15,3 +15,7 @@
 //night mode will be availabel via a button or switch - tbd 
 
 
+function testingConnection(){
+    console.log("Connected to HTML!")
+}
+

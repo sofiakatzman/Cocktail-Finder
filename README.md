@@ -66,5 +66,6 @@ This is my initial README template to be updated closer to project completion.
 
 Last Update: 3/15/23
 
-Update Log: 
-3/15/23 - created README 
+Daily Work Log: 
+3/15/23 - Created README, index.js, and index.html files. 
+3/15/23 - Initialized basic body for html. Connected js page to HTML via script tag. 
