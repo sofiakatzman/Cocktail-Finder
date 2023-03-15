@@ -1,0 +1,82 @@
+This space is just for my notes: 
+
+
+
+
+
+
+RECIPIES 
+
+
+TEMPLATE: 
+
+{
+    name: "",
+    spirit1: ["type", qty],
+    spirit2: ["type", qty],
+    lemonLime: ["type", qty],
+    mixer: ["type", qty],
+    garnish1: ["type", "style"],
+    garnish2: ["type"],
+    simpleSyrup: ,
+    ice: ,
+    glassType: "",
+    instructions: "",
+    imageURL: "",
+    likeCount: 0,
+},
+
+
+------ 
+
+{
+    name: "Screwdriver",
+    spirit1: ["vodka", 2],
+    mixer: ["orange juice", 5],
+    garnish1: ["orange", "slice"],
+    garnish2: "cocktail cherry"
+    ice: true,
+    glassType: "highball",
+    instructions: "Add both ingredients to a highball glass. Add ice. If desired, garnish with an orange slice and cocktail cherry. ",
+    imageURL: "https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg",
+    likeCount: 0,
+},
+
+{
+    name: "Vodka Sunrise",
+    spirit1: ["vodka", 1],
+    spirit2: ["grenadine", 2],
+    mixer: ["orange juice", 5],
+    garnish1: ["orange", "slice"],
+    simpleSyrup: [false],
+    ice: true,
+    glassType: "highball",
+    instructions: "Fill a highball glass with ice. Pour in the vodka and orange juice and stir.
+Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for the sunrise gradient effect.
+Garnish with an orange slice and cocktail cherry.",
+    imageURL: "https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg",
+    likeCount: 0,
+},
+
+
+
+
+{
+    name: "Tequila Sunrise",
+    spirit1: ["tequila", 1],
+    spirit2: ["grenadine", 2],
+    mixer: ["orange juice", 5],
+    garnish1: ["orange", "slice"],
+    garnish2: ["cocktail cherry"],
+    simpleSyrup: false,
+    ice: true,
+    glassType: "highball",
+    instructions: ""Fill a highball glass with ice. Pour in the tequila and orange juice and stir.
+Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for sunrise gradient effect.
+Garnish with an orange slice and cocktail cherry."",
+    imageURL: "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg",
+    likeCount: 0,
+},
+
+
+					
