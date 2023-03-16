@@ -1,49 +1,186 @@
-{     
-"recipes": [
+{
+    "recipes": [
     {
-        "name": "Screwdriver",
-        "baseSpirit": "vodka",
-        "mixer": "orange juice",
-        "garnish1": ["orange", "slice"],
-        "extraGarnish": "cocktail cherry",
-        "ice": true,
-        "glassType": "highball",
-        "ingredientsList" : ["2 oz. vodka"," 4 oz. orange juice", "ice for serving"],
-        "instructions": "Add both ingredients to a highball glass. Add ice. If desired, garnish with an orange slice and cocktail cherry. ",
-        "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg",
-        "likeCount": 0
+    "recipeId": 1,
+    "name": "Screwdriver",
+    "baseSpirit": "vodka",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": ["orange", "slice"],
+    "extraGarnish": "-",
+    "ice": true,
+    "glassType": "HIGHBALL",
+    "instructions": "Add both ingredients to a highball glass. Add ice. If desired, garnish with an orange slice and cocktail cherry.",
+    "ingredientsList": ["2 oz. vodka", " 4 oz. orange juice", "ice for serving"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/screwdriver-drink/"
     },
     {
-        "name": "Vodka Sunrise",
-        "baseSpirit": "vodka",
-        "mixer": "orange juice", 
-        "garnish1": ["orange", "slice"],
-        "simpleSyrup": false,
-        "ice": true,
-        "glassType": "highball",
-        "ingredientsList": ["2 oz. vodka", "4 oz. orange juice", "3/4 ounce grenadine syrup", "ice for serving"], 
-        "instructions": "Fill a highball glass with ice. Pour in the vodka and orange juice and stir. Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for the sunrise gradient effect. Garnish with an orange slice and cocktail cherry.",
-        "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg",
-        "likeCount": 0
+    "recipeId": 2,
+    "name": "Vodka Sunrise",
+    "baseSpirit": "vodka",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": ["orange", "slice"],
+    "extraGarnish": "-",
+    "ice": true,
+    "glassType": "HIGHBALL",
+    "instructions": "Fill a highball glass with ice. Pour in the vodka and orange juice and stir.Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for the sunrise gradient effect.Garnish with an orange slice and cocktail cherry.",
+    "ingredientsList": ["2 oz. vodka", "4 oz. orange juice", "3/4 ounce grenadine syrup", "ice for serving"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/Vodka-Sunrise/"
     },
     {
-        "name": "Tequila Sunrise",
-        "baseSpirit": "tequila",
-        "mixer": "orange juice",
-        "garnish1": ["orange", "slice"],
-        "extraGarnish": "cocktail cherry",
-        "simpleSyrup": false,
-        "ice": true,
-        "glassType": "highball",
-        "ingredientsList": ["2 oz. tequila", "4 oz. orange juice", "3/4 oz. grenadine syrup, ice)"],
-        "instructions": "Fill a highball glass with ice. Pour in the tequila and orange juice and stir. Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for sunrise gradient effect.  Garnish with an orange slice and cocktail cherry.",
-        "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg",
-        "likeCount": 0
+    "recipeId": 3,
+    "name": "Tequila Sunrise",
+    "baseSpirit": "tequila",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": ["orange", "slice"],
+    "extraGarnish": "-",
+    "ice": true,
+    "glassType": "HIGHBALL",
+    "instructions": "Fill a highball glass with ice. Pour in the tequila and orange juice and stir.Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for sunrise gradient effect.Garnish with an orange slice and cocktail cherry.",
+    "ingredientsList": ["2 oz. tequila", "4 oz. orange juice", "3/4 oz. grenadine syrup, ice)"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/Tequila-Sunrise/"
+    },
+    {
+    "recipeId": 4,
+    "name": "Margarita",
+    "baseSpirit": "tequila",
+    "mixer": "-",
+    "simpleSyrup": false,
+    "garnish1": ["lime", "wedge"],
+    "extraGarnish": "sugar",
+    "ice": true,
+    "glassType": "OLD FASHIONED GLASS",
+    "instructions": "Make the margarita mix: Juice the limes and lemons. Mix them together with the Cointreau. Refrigerate until ready to serve; lasts up to 1 week. Make a salt rim: Cut a notch in a lime wedge, then run the lime around the rim of a glass. Dip the edge of the rim into a plate of sugar. Make a single drink or pitcher: Pour 3 ½ tablespoons of margarita mix into a glass and top off with 3 tablespoons tequila (about equal parts). Or, add the entire mix to a pitcher with 1 ½ cups tequila. Serve with ice.",
+    "ingredientsList": ["1.5 cups of Tequila", "1/2 cup fresh lime juice", "1/4 cup fresh lemon juice", "1 cup Contreau"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/02/Virgin-Margarita-008-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/margarita-mix/"
+    },
+    {
+    "recipeId": 5,
+    "name": "Orange Margarita",
+    "baseSpirit": "tequila",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": ["lime","wedge"],
+    "extraGarnish": "sugar",
+    "ice": true,
+    "glassType": "OLD FASHIONED GLASS",
+    "instructions": "Cut a notch in a lime wedge, then run the lime around the rim of a glass. Dip the edge of the rim into a plate of salt (or for a festive look, use Margarita Salt).Single drink: Place all ingredients in a cocktail shaker and fill it with ice. Shake until cold. Strain the margarita into the glass with the salted rim. Fill the glass with ice and serve.Pitcher: Place 1 ½ cups tequila, 1 ½ cups orange juice, 1 cup triple sec, and 1 cup lime juice in a pitcher. Add 3 handfuls ice and stir until cold. ",
+    "ingredientsList": ["1.5 oz. Tequila", "1.5 oz freshly squeezed orange juice", "1 oz. Cointreau", "1 oz. fresh lime juice", "kosher salt for the rim", "ice for serving"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/03/Orange-Margarita-009-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/Orange-Margarita/"
+    },
+    {
+    "recipeId": 6,
+    "name": "Mimosa",
+    "baseSpirit": "prosecco",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": null,
+    "extraGarnish": "-",
+    "ice": false,
+    "glassType": "FLUTE",
+    "instructions": "Tilt the champagne flute and pour in the Prosecco (it will fill about 2/3 of the glass). Top off with orange juice and then add the splash of Cointreau if desired. ",
+    "ingredientsList": ["2 oz fresh orange juice", "4 oz. Prosecco", "1 teaspoon Cointreau"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Mimosa-002-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/best-mimosa-with-prosecco/"
+    },
+    {
+    "recipeId": 7,
+    "name": "Garibaldi",
+    "baseSpirit": "campari",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": ["orange","wedge"],
+    "extraGarnish": "-",
+    "ice": false,
+    "glassType": "HIGHBALL",
+    "instructions": "Squeeze the orange juice. Use an immersion blender, hand frother or whisk to blend the orange juice until it is foamy.Add Campari to a highball filled with ice. Top with foamed orange juice and stir gently. Top with an orange wedge. ",
+    "ingredientsList": ["1.5 oz Campari", "4 oz. fresh squeezed orange juice"],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/10/Garibaldi-Cocktail-002-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/garibaldi-cocktail-campari-orange/"
+    },
+    {
+    "recipeId": 8,
+    "name": "Madras",
+    "baseSpirit": "vodka",
+    "mixer": "cranberry",
+    "simpleSyrup": true,
+    "garnish1": ["lemon","wedge"],
+    "extraGarnish": "-",
+    "ice": true,
+    "glassType": "CURVY",
+    "instructions": "Fill a glass with ice. Pour in the vodka, cranberry juice and syrup and stir with bar spoon.Pour in the orange juice and squeeze the lime wedge on top. Garnish with an additional lime.",
+    "ingredientsList": [
+    "1.5 oz Vodka",
+    "2 oz. cranberry juice",
+    "1 teaspoon simple syrup",
+    "1.5 oz fresh squeezed orange juice",
+    "one lime wedge"
+    ],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/12/Madras-Cocktail-008-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/madras-cocktail/"
+    },
+    {
+    "recipeId": 9,
+    "name": "Ward 8",
+    "baseSpirit": "bourbon",
+    "mixer": "orange",
+    "simpleSyrup": false,
+    "garnish1": [
+    "orange",
+    "wedge"
+    ],
+    "extraGarnish": "cocktail",
+    "ice": false,
+    "glassType": "COCKTAIL",
+    "instructions": "Place the rye whiskey, lemon juice, orange juice, and grenadine in a cocktail shaker. Add 2 handfuls of ice and shake until cold.Strain the drink into a cocktail glass. Garnish with an orange wedge and cocktail cherry if desired.",
+    "ingredientsList": [
+    "2.5 oz. Whiskey",
+    "3.4 oz. fresh lemon juice",
+    "3.4 oz. fresh orange juice",
+    "1 teaspoon grenadine"
+    ],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/04/Ward-8-Cocktail-002s-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/ward-8-cocktail/"
+    },
+    {
+    "recipeId": 10,
+    "name": "Siesta Cocktail",
+    "baseSpirit": "tequila",
+    "mixer": "grapefruit",
+    "simpleSyrup": true,
+    "garnish1": [
+    "orange",
+    "wedge"
+    ],
+    "extraGarnish": "-",
+    "ice": true,
+    "glassType": "COCKTAIL",
+    "instructions": "Place the tequila, Campari, grapefruit juice, lime juice, and simple syrup in a cocktail shaker. Add 2 handfuls of ice and shake until cold.Strain the drink into a cocktail glass. Garnish with a citrus wedge if desired",
+    "ingredientsList": [
+    "2 oz. Tequila",
+    ".5 oz. Campari",
+    ".5 oz. grapefruit",
+    ".5 oz. lime juice",
+    ".5 oz. simple syrup"
+    ],
+    "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/05/Siesta-Cocktail-001-368x368.jpg",
+    "likeCount": 0,
+    "recipeSource": "https://www.acouplecooks.com/Siesta-Cocktail/"
     }
-
-    ]}
-
-
-
-
-    
+]}

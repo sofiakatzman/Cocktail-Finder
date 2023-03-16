@@ -23,6 +23,11 @@ form.addEventListener('submit', (event) => {
     data.forEach(recipe => { 
   //filter function that itterates through kson data
   //need to add if statements for when only one or the other is picked
+  console.log(recipe.baseSpirit)
+  console.log(selectedSpiritBase)
+  console.log(recipe.mixer)
+  console.log(selectedMixer)
+
         if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
           displayRecipeCard(recipe)  
           console.log(recipe.name)
@@ -34,11 +39,12 @@ form.addEventListener('submit', (event) => {
   .catch(error => console.error(error))
 })
 
-
 function displayRecipeCard(recipe){
   // creates a heading for drink name
+  const h5 = document.createElement('h5')
+  h5.innerText= "Ingredients:";
   const h4 = document.createElement('h4')
-    h4.innerText = recipe.name
+  h4.innerText = recipe.name
 
   // displays drink photo
   const img = document.createElement('img')
@@ -70,6 +76,32 @@ function displayRecipeCard(recipe){
   //puts all new elements together into one card
     const divCard = document.createElement('div')
     divCard.setAttribute('class', 'card')
-    divCard.append(h4, img, ul, p, pLikes, btn)
+    divCard.append(h4, img, h5, ul, p, pLikes, btn)
     divCollect.append(divCard)
-    }
+}
+
+// document.addEventListener('click', () => {
+//   fetch("http://localhost:3000/recipes")
+//     .then(response => response.json())
+//     .then(data => {
+//       // Find the recipe you want to update in the data array
+//       const recipeToUpdate = data.find(recipe => recipe.id === recipeId);
+//       if (!recipeToUpdate) {
+//         console.log(`Could not find recipe with ID ${recipeId}`);
+//         return;
+//       }
+//       // Update the number of likes for the recipe
+//       recipeToUpdate.likeCount += 1;
+      
+//       // Send a PATCH request to update the recipe on the server
+//     //   fetch(`url${recipeToUpdate.id}`, {
+//     //     method: 'PATCH',
+//     //     headers: {
+//     //       'content-type': 'application/json'
+//     //     },
+//     //     body: JSON.stringify(recipeToUpdate)
+//     //   })
+//     //   .then(res => res.json())
+//     //   .then(updatedRecipe => console.log(updatedRecipe));
+//     // });
+// });
