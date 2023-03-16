@@ -6,7 +6,6 @@ document.addEventListener("DOMContentLoaded", function() {
 //sends request for data from server
 const url = "http://localhost:3000/recipies"
 
-
 //DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
 const dropdownSpiritBase = document.querySelector('#dropdownSpiritBase')
@@ -16,7 +15,6 @@ const dropdownLemonLime = document.querySelector('#dropdownLemonLime')
 const dropdownGarnish = document.querySelector('#dropdownGarnish')
 const dropdownGarnish2 = document.querySelector('#dropdownGarnish2')
 const submitButton = document.querySelector('#submitButton')
-
 
 //event listener that waits for button to be clicked to store the filter label data
 form.addEventListener('submit', (event) => {
@@ -29,29 +27,26 @@ form.addEventListener('submit', (event) => {
   const selectedGarnish2 = dropdownGarnish2.value
   console.log(selectedSpiritBase)
 
+  //server fetch request to retrieve json data & finds a match
   fetch(url)
   .then(response => response.json())
-  .then(data => { 
-    data.forEach(recipie => {
-        if (recipie.spirit1[0] === selectedSpiritBase){
-            console.log("We have a match!")
+  .then(data => {
+    data.forEach(recipie => { 
+        if(recipie.spirit1[0] === selectedSpiritBase && recipie.mixer[0] === selectedMixer){
+            console.log(recipie.name)
         }
-
         else{
-            console.log("No match!")
+            console.log("No match, try again!")
         }
-        
     })
 })
   .catch(error => console.error(error))
 
 })
 
-//Now i need to write the function that will go through the arrays and look for the values above. 
 
 
-
-
+//write function to display matchd item on DOM 
 
 
 
