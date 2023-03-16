@@ -23,7 +23,7 @@ form.addEventListener('submit', (event) => {
     data.forEach(recipe => { 
   //filter function that itterates through kson data
   //need to add if statements for when only one or the other is picked
-        if(recipe.spirit1[0] === selectedSpiritBase && recipe.mixer[0] === selectedMixer){
+        if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
           displayRecipeCard(recipe)  
           console.log(recipe.name)
         } else {
@@ -36,34 +36,40 @@ form.addEventListener('submit', (event) => {
 
 
 function displayRecipeCard(recipe){
+  // creates a heading for drink name
+  const h4 = document.createElement('h4')
+    h4.innerText = recipe.name
 
-  //creates a heading for drink name
-    let h2 = document.createElement('h2')
-    h2.innerHtml = recipe.name
-    h2.innerHtml = "TEST"
-  //displays drink photo
-    let img = document.createElement('img')
+  // displays drink photo
+  const img = document.createElement('img')
     img.setAttribute('src', recipe.imageURL)
 
   //creates a paragraph element that can hold drink ingredients
     img.setAttribute('class', 'recipe-photo')
-    let pLikes = document.createElement('p')
-    pLikes.innerText = `${recipe.likeCount}`
+    const pLikes = document.createElement('p')
+    pLikes.innerText = `Recipe Likes: ${recipe.likeCount}`
 
-  //creates a paragraph element that can hold drink likes
+  //trying to create a list of ingredients as li elements - for each loop because it is an array of ingredients
+      const ul = document.createElement("ul");
+      const ingredients = recipe.ingredientsList
+      ingredients.forEach(item => {
+        const li = document.createElement("li")
+        li.textContent = item
+        ul.appendChild(li)
+      })
 
-    let pIngredients = document.createElement('p')
-    pIngredients.innerText = "hello"
-
+  //displays instructions
+   const p = document.createElement("p")
+    p.innerText = recipe.instructions
 
   //creates like button 
-    let btn = document.createElement('button')
+    const btn = document.createElement('button')
     btn.setAttribute('class', 'like-btn')
     btn.innerText = "like"
 
-    //puts all new elements together into one card
-    let divCard = document.createElement('div')
+  //puts all new elements together into one card
+    const divCard = document.createElement('div')
     divCard.setAttribute('class', 'card')
-    divCard.append(h2, img, pLikes, btn)
+    divCard.append(h4, img, ul, p, pLikes, btn)
     divCollect.append(divCard)
     }

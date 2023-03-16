@@ -9,7 +9,7 @@ Cocktail Finder is a cocktail recipe finder app that will match you with a cockt
 
 Pending Feature: Users can like cocktails and their likes are stored.
 
-Pending Feature: Night-mode will invert the webpage appearance to a "dark-mode" where the background is black and the text is white. 
+Pending Feature: Hovering over a cocktail will change it's shadow's appearance
 
 
 ## Installation

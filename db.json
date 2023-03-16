@@ -2,42 +2,48 @@
 "recipes": [
     {
         "name": "Screwdriver",
-        "spirit1": ["vodka", 2],
-        "mixer": ["orange juice", 5],
+        "baseSpirit": "vodka",
+        "mixer": "orange juice",
         "garnish1": ["orange", "slice"],
         "extraGarnish": "cocktail cherry",
         "ice": true,
         "glassType": "highball",
+        "ingredientsList" : ["2 oz. vodka"," 4 oz. orange juice", "ice for serving"],
         "instructions": "Add both ingredients to a highball glass. Add ice. If desired, garnish with an orange slice and cocktail cherry. ",
         "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg",
         "likeCount": 0
     },
     {
         "name": "Vodka Sunrise",
-        "spirit1": ["vodka", 1],
-        "spirit2": ["grenadine", 2],
-        "mixer": ["orange juice", 5],
+        "baseSpirit": "vodka",
+        "mixer": "orange juice", 
         "garnish1": ["orange", "slice"],
-        "simpleSyrup": [false],
+        "simpleSyrup": false,
         "ice": true,
         "glassType": "highball",
+        "ingredientsList": ["2 oz. vodka", "4 oz. orange juice", "3/4 ounce grenadine syrup", "ice for serving"], 
         "instructions": "Fill a highball glass with ice. Pour in the vodka and orange juice and stir. Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for the sunrise gradient effect. Garnish with an orange slice and cocktail cherry.",
         "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg",
         "likeCount": 0
     },
     {
         "name": "Tequila Sunrise",
-        "spirit1": ["tequila", 1],
-        "spirit2": ["grenadine", 2],
-        "mixer": ["orange juice", 5],
+        "baseSpirit": "tequila",
+        "mixer": "orange juice",
         "garnish1": ["orange", "slice"],
-        "extraGarnish": ["cocktail cherry"],
+        "extraGarnish": "cocktail cherry",
         "simpleSyrup": false,
         "ice": true,
         "glassType": "highball",
+        "ingredientsList": ["2 oz. tequila", "4 oz. orange juice", "3/4 oz. grenadine syrup, ice)"],
         "instructions": "Fill a highball glass with ice. Pour in the tequila and orange juice and stir. Pour the grenadine into center of the drink and it will sink to the bottom. Stir gently for sunrise gradient effect.  Garnish with an orange slice and cocktail cherry.",
         "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg",
         "likeCount": 0
     }
 
     ]}
+
+
+
+
+    
