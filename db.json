@@ -52,7 +52,7 @@
     "recipeId": 4,
     "name": "Margarita",
     "baseSpirit": "tequila",
-    "mixer": "-",
+    "mixer": "lime",
     "simpleSyrup": false,
     "garnish1": ["lime", "wedge"],
     "extraGarnish": "sugar",
