@@ -1,7 +1,5 @@
-
 //wait for dom to load to start up tbd if necessary
-document.addEventListener("DOMContentLoaded", function() {
-  });
+document.addEventListener("DOMContentLoaded", function() {});
 
 //sends request for data from server
 const url = "http://localhost:3000/recipies"
@@ -18,25 +16,26 @@ form.addEventListener('submit', (event) => {
   const selectedSpiritBase = dropdownSpiritBase.value
   const selectedMixer = dropdownMixer.value
 
-  //server fetch request to retrieve json data & finds a match
+  //server fetch request to retrieve json data
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    data.forEach(recipie => { 
+    data.forEach(recipe => { 
+  //filter function that itterates through kson data
   //need to add if statements for when only one or the other is picked
-        if(recipie.spirit1[0] === selectedSpiritBase && recipie.mixer[0] === selectedMixer){
-            console.log(recipie.name)
-        }
-        else{
-            console.log("Please try a different combination!")
+        if(recipe.spirit1[0] === selectedSpiritBase && recipe.mixer[0] === selectedMixer){
+            console.log(recipe.name)
+        } else {
+            console.log("Please try a different combination!") // in the end we want this to return only if there are NO matched recipes
         }
     })
-})
+  })
   .catch(error => console.error(error))
-
 })
 
+function displayRecipeCard(recipe){
 
+}
 
 //write function to display matchd item on DOM 
 
