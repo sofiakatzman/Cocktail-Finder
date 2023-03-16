@@ -5,10 +5,7 @@ Cocktail Recipe Finder App for Phase 1 Project Assignment
 
 # Description:  
 
-Cocktail Finder is a cocktail recipe finder app that will match you with a cocktail recipe based on ingredients you have on hand.  
-
-
-Pending Feature: When searching for a recipe, the user has the option to limit the amount of additional ingredients needed in order to create the output cocktail. 
+Cocktail Finder is a cocktail recipe finder app that will match you with a cocktail recipe based on your choice of base spirit and mixer. 
 
 Pending Feature: Users can like cocktails and their likes are stored.
 
@@ -74,11 +71,13 @@ Daily Work Log:
 - Implemented temporary smaller db to begin working on functions. 
 - Created fetch and succesfully accessed db data
 - created drop down menus to select ingredients
+- created array itteration of json server data
+- filter function completed
 
 
 
 PENDING GOALS: 
-- write functions for filters
+- upload filtered results to DOM
 - implement remainder of database 
 - create style attributes for display content nicely
 

@@ -9,34 +9,26 @@ const url = "http://localhost:3000/recipies"
 //DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
 const dropdownSpiritBase = document.querySelector('#dropdownSpiritBase')
-const dropdownSpirit2 = document.querySelector('#dropdownSpirit2')
 const dropdownMixer = document.querySelector('#dropdownMixer')
-const dropdownLemonLime = document.querySelector('#dropdownLemonLime')
-const dropdownGarnish = document.querySelector('#dropdownGarnish')
-const dropdownGarnish2 = document.querySelector('#dropdownGarnish2')
-const submitButton = document.querySelector('#submitButton')
+
 
 //event listener that waits for button to be clicked to store the filter label data
 form.addEventListener('submit', (event) => {
   event.preventDefault()
   const selectedSpiritBase = dropdownSpiritBase.value
-  const selectedSpirit2 = dropdownSpirit2.value
   const selectedMixer = dropdownMixer.value
-  const selectedLemonLime = dropdownLemonLime.value
-  const selectedGarnish = dropdownGarnish.value
-  const selectedGarnish2 = dropdownGarnish2.value
-  console.log(selectedSpiritBase)
 
   //server fetch request to retrieve json data & finds a match
   fetch(url)
   .then(response => response.json())
   .then(data => {
     data.forEach(recipie => { 
+
         if(recipie.spirit1[0] === selectedSpiritBase && recipie.mixer[0] === selectedMixer){
             console.log(recipie.name)
         }
         else{
-            console.log("No match, try again!")
+            return
         }
     })
 })
