@@ -23,12 +23,12 @@ form.addEventListener('submit', (event) => {
   .then(response => response.json())
   .then(data => {
     data.forEach(recipie => { 
-
+  //need to add if statements for when only one or the other is picked
         if(recipie.spirit1[0] === selectedSpiritBase && recipie.mixer[0] === selectedMixer){
             console.log(recipie.name)
         }
         else{
-            return
+            console.log("Please try a different combination!")
         }
     })
 })
