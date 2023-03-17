@@ -14,8 +14,21 @@ Pending Feature: Hovering over a cocktail will change it's shadow's appearance
 
 ## Installation
 
-Cocktail Finder requires no additional installation. 
-Please open the index.html file on your preferred browser to use this app.
+Cocktail Finder requires a server conection to it's db.json file in order for the application to work. 
+NPM built a full fake rest API JSON Server for backend prototyping and details can be found here: https://www.npmjs.com/package/json-server?activeTab=readme
+Please follow the below instructions to install and connec to this server. 
+
+#1. Installing NPM JSON SERVER
+To install the JSON Server, please run the below command in your terminal: 
+
+        npm install -g json-server
+
+#2. Start your JSON Server 
+In your terminal, initialize the server connection by entering the below code in your local environment: 
+
+        json-server --watch db.json
+
+Once the below screen is seen, you can open the index.html file on your preferred browser to use this app.
 
 
 ## Visuals
@@ -74,13 +87,13 @@ Daily Work Log:
 - created array itteration of json server data
 - filter function completed 
 - filtered results are uploaded to DOM
-- 
 
+3/16/23
+- added dom clearout at new form submission
+- added "try again error" that clears out after every new form submission
 
 
 PENDING GOALS: 
-- clear out dom when event button is clicked (so only new results load)
-- create "Please try a different combination" return on screen when there are no results
 - finalize "like" feature - wrote code but not yet working with fetch patch **
 - add one more event listener -- either no added sugar or non pure css hover (change css class event listener)
 - implement remainder of database - 10 / 20 currently

@@ -13,7 +13,12 @@ let divCollect = document.querySelector('#recipe-display')
 //event listener that waits for button to be clicked to store the filter label data
 form.addEventListener('submit', (event) => {
   event.preventDefault()
+
+  //below line clears the recipie cards that are being displayed so only new results are seen
   document.querySelectorAll('.card').forEach(e => e.remove());
+  document.querySelectorAll('.no-match').forEach(e => e.remove())
+
+  //this captures the values that were entered in the form when the button was clicked
   const selectedSpiritBase = dropdownSpiritBase.value
   const selectedMixer = dropdownMixer.value
 
@@ -22,23 +27,25 @@ form.addEventListener('submit', (event) => {
   .then(response => response.json())
   .then(data => {
     data.forEach(recipe => { 
-  //filter function that itterates through kson data
-  //need to add if statements for when only one or the other is picked
-  // console.log(recipe.baseSpirit)
-  // console.log(selectedSpiritBase)
-  // console.log(recipe.mixer)
-  // console.log(selectedMixer)
 
-        if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
+      if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
           displayRecipeCard(recipe)  
           console.log(recipe.name)
-        } else {
-            console.log("Please try a different combination!") // in the end we want this to return only if there are NO matched recipes
-        }
-    })
-  })
+        }},        
+        )
+       displayError()},)
   .catch(error => console.error(error))
 })
+
+//function that checks for results, if there are none then it displays a "try again" error
+function displayError(){
+  let checkH5 = document.querySelector('h5')
+  if (checkH5 === null){
+  const tryAgainDiv = document.createElement('div')
+  tryAgainDiv.setAttribute('class','no-match')
+  tryAgainDiv.innerText = "No luck! Please try a different combination!"
+  divCollect.appendChild(tryAgainDiv)
+  }}
 
 function displayRecipeCard(recipe){
   // creates a heading for drink name
