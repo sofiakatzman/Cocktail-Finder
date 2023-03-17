@@ -13,6 +13,7 @@ let divCollect = document.querySelector('#recipe-display')
 //event listener that waits for button to be clicked to store the filter label data
 form.addEventListener('submit', (event) => {
   event.preventDefault()
+  document.querySelectorAll('.card').forEach(e => e.remove());
   const selectedSpiritBase = dropdownSpiritBase.value
   const selectedMixer = dropdownMixer.value
 
@@ -80,28 +81,4 @@ function displayRecipeCard(recipe){
     divCollect.append(divCard)
 }
 
-// document.addEventListener('click', () => {
-//   fetch("http://localhost:3000/recipes")
-//     .then(response => response.json())
-//     .then(data => {
-//       // Find the recipe you want to update in the data array
-//       const recipeToUpdate = data.find(recipe => recipe.id === recipeId);
-//       if (!recipeToUpdate) {
-//         console.log(`Could not find recipe with ID ${recipeId}`);
-//         return;
-//       }
-//       // Update the number of likes for the recipe
-//       recipeToUpdate.likeCount += 1;
-      
-//       // Send a PATCH request to update the recipe on the server
-//     //   fetch(`url${recipeToUpdate.id}`, {
-//     //     method: 'PATCH',
-//     //     headers: {
-//     //       'content-type': 'application/json'
-//     //     },
-//     //     body: JSON.stringify(recipeToUpdate)
-//     //   })
-//     //   .then(res => res.json())
-//     //   .then(updatedRecipe => console.log(updatedRecipe));
-//     // });
-// });
+
