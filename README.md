@@ -72,17 +72,19 @@ Daily Work Log:
 - Created fetch and succesfully accessed db data
 - created drop down menus to select ingredients
 - created array itteration of json server data
-- filter function completed
+- filter function completed 
+- filtered results are uploaded to DOM
+- 
 
 
 
 PENDING GOALS: 
-- upload filtered results to DOM
-- implement remainder of database 
-- create style attributes for display content nicely
+- clear out dom when event button is clicked (so only new results load)
+- create "Please try a different combination" return on screen when there are no results
+- finalize "like" feature - wrote code but not yet working with fetch patch **
+- add one more event listener -- either no added sugar or non pure css hover (change css class event listener)
+- implement remainder of database - 10 / 20 currently
+- create style attributes to display content nicely
 
-
-
-** considering new feature : allow a "no added sugar" option by filtering simplesyrup:false only 
 
 

@@ -23,10 +23,10 @@ form.addEventListener('submit', (event) => {
     data.forEach(recipe => { 
   //filter function that itterates through kson data
   //need to add if statements for when only one or the other is picked
-  console.log(recipe.baseSpirit)
-  console.log(selectedSpiritBase)
-  console.log(recipe.mixer)
-  console.log(selectedMixer)
+  // console.log(recipe.baseSpirit)
+  // console.log(selectedSpiritBase)
+  // console.log(recipe.mixer)
+  // console.log(selectedMixer)
 
         if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
           displayRecipeCard(recipe)  
