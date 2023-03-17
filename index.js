@@ -1,6 +1,3 @@
-//wait for dom to load to start up tbd if necessary
-document.addEventListener("DOMContentLoaded", function() {});
-
 //sends request for data from server
 const url = "http://localhost:3000/recipes"
 
@@ -14,11 +11,11 @@ let divCollect = document.querySelector('#recipe-display')
 form.addEventListener('submit', (event) => {
   event.preventDefault()
 
-  //below line clears the recipie cards that are being displayed so only new results are seen
+  //below line clears the recipe cards or error message that are being displayed so only new results are seen
   document.querySelectorAll('.card').forEach(e => e.remove());
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
-  //this captures the values that were entered in the form when the button was clicked
+  //this captures the values that were entered at time of furm submission
   const selectedSpiritBase = dropdownSpiritBase.value
   const selectedMixer = dropdownMixer.value
 
@@ -28,6 +25,7 @@ form.addEventListener('submit', (event) => {
   .then(data => {
     data.forEach(recipe => { 
 
+      //function that checks if json results match form filters
       if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
           displayRecipeCard(recipe)  
           console.log(recipe.name)
@@ -79,6 +77,7 @@ function displayRecipeCard(recipe){
   //creates like button 
     const btn = document.createElement('button')
     btn.setAttribute('class', 'like-btn')
+    btn.setAttribute('id', `${recipe.id}`)
     btn.innerText = "like"
 
   //puts all new elements together into one card
@@ -86,6 +85,91 @@ function displayRecipeCard(recipe){
     divCard.setAttribute('class', 'card')
     divCard.append(h4, img, h5, ul, p, pLikes, btn)
     divCollect.append(divCard)
-}
 
 
+    // event listener for like button being clicked
+    divCard.querySelector('.like-btn').addEventListener('click', () => {
+      recipe.likeCount += 1;
+      pLikes.innerText = `Recipe Likes: ${recipe.likeCount}`
+
+      fetch (`http://localhost:3000/recipes/${recipe.id}`, {
+        method: 'PATCH',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+  
+        body: JSON.stringify(recipe)
+      })
+      .then (res => res.json())
+      .then(recipe => console.log(recipe))
+    })
+
+    //fetch request to update server db per like status
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function updateDonation(animalObject){
+// fetch (`http://localhost:3000/recipes/${buttonId}`, {
+//   method: 'POST',
+//   headers: {
+//       'Content-Type': 'application/json'
+//   },
+
+//   body: JSON.stringify()
+
+// })
+
+// }
+
+
+
+
+
+
+  //   fetch(`http://localhost:3000/recipes/${recipeId}`)
+//       .then(response => response.json())
+//       .then(data => {
+//         // Find the recipe you want to update in the data array
+//         const recipeToUpdate = data.find(recipe => recipe.id === recipeId);
+//         if (recipeToUpdate === null) {
+//           console.log(`Could not find recipe with ID ${recipeId}`);
+//           return;
+//         }
+//         // Update the number of likes for the recipe
+//         recipeToUpdate.likeCount += 1;
+
+//         // Send a PATCH request to update the recipe on the server
+//         fetch(`http://localhost:3000/recipes/${recipeToUpdate.id}`, {
+//           method: 'PATCH',
+//           headers: {
+//             'content-type': 'application/json'
+//           },
+//           body: JSON.stringify(recipeToUpdate)
+//         })
+//         .then(res => res.json())
+//         .then(updatedRecipe => console.log(updatedRecipe));
+//   //     });

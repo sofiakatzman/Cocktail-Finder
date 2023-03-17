@@ -2,8 +2,16 @@ h3 {
  color: green;   
 }
 
+h4 {
+  color: rgb(9, 94, 94);
+  font-size: 26px;
+  text-align: center;  
+
+ }
+ 
+
 .card {
-  text-align: center;
+  text-align: left;
   border: rgb(149, 201, 17) solid 1px;
   padding: 1rem;
   width: 20rem;
