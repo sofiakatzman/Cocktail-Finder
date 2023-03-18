@@ -61,7 +61,8 @@ Source URLs can be found in //FILE NAME HERE TBD//
 
 ## Acknowledgement
 
-Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are from. Their contnt contributions have made this application possible. 
+Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are from. 
+Their contnt contributions have made this application possible. 
 
 
 ## Support
@@ -97,8 +98,9 @@ Daily Work Log:
 3/17/23
 - implemented remainder of database = 20 different recipies now loaded!!
 - tweaked style attributes ; happy with over aesthetic 
+- added event listener for cards to change colors when the mouse hovers over them
 
 PENDING GOALS: 
-- add one more event listener -- either no added sugar or non pure css hover (change css class event listener)
-
+- clean code 
+- update README 
 
