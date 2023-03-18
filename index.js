@@ -1,7 +1,6 @@
 //sends request for data from server
 const url = "http://localhost:3000/recipes"
 
-
 //handles Loading Cards to page
 function handleCardLoad() {
   fetch(url)
@@ -55,7 +54,6 @@ function handleError(){
   tryAgainDiv.setAttribute('class','no-match')
   tryAgainDiv.innerHTML = "No luck! Please try a different combination!<br><br>"
   divCollect.appendChild(tryAgainDiv)
- 
 }}
 
 function displayRecipeCard(recipe){
@@ -72,7 +70,7 @@ function displayRecipeCard(recipe){
     img.setAttribute('src', recipe.imageURL)
     img.setAttribute('class', 'recipe-photo')
 
-  //creates a list of ingredients as li elements - for each loop because it is an array of ingredients ** reduce to map later **
+  //creates a list of ingredients as li elements - for each loop because it is an array of ingredients ** reduce to map later - check which one is faster **
       const ul = document.createElement("ul")
       const ingredients = recipe.ingredientsList
       ingredients.forEach(item => {
@@ -127,7 +125,7 @@ function displayRecipeCard(recipe){
     })
 }
 
-//add reset button to the bottom of the page 
+//add reset button
 const resetBtn = document.createElement('button');
 resetBtn.innerText = 'Reset Recipes';
 
@@ -139,6 +137,5 @@ footer.appendChild(resetBtn);
 resetBtn.addEventListener('click', (event) => {
   event.preventDefault();
   handleCardLoad();
-  console.log('reset clicked');
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 });

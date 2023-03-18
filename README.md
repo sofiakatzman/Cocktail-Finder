@@ -34,9 +34,9 @@ Once the below screen is seen, you can open the index.html file on your preferre
 
 ## Visuals
 
-
-// GIF OF APP WALKTHROUGH PENDING
-
+//TESTING GIF HERE 
+![Alt Text](https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif)
+//TESTING GIF HERE 
 
 ## Usage
 
