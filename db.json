@@ -20,7 +20,7 @@
         "ice for serving"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg",
-      "likeCount": 2,
+      "likeCount": 19,
       "recipeSource": "https://www.acouplecooks.com/screwdriver-drink/"
     },
     {
@@ -44,7 +44,7 @@
         "ice for serving"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg",
-      "likeCount": 3,
+      "likeCount": 22,
       "recipeSource": "https://www.acouplecooks.com/Vodka-Sunrise/"
     },
     {
@@ -67,7 +67,7 @@
         "3/4 oz. grenadine syrup, ice)"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg",
-      "likeCount": 0,
+      "likeCount": 18,
       "recipeSource": "https://www.acouplecooks.com/Tequila-Sunrise/"
     },
     {
@@ -91,7 +91,7 @@
         "1 cup Contreau"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/02/Virgin-Margarita-008-368x368.jpg",
-      "likeCount": 10,
+      "likeCount": 16,
       "recipeSource": "https://www.acouplecooks.com/margarita-mix/"
     },
     {
@@ -117,7 +117,7 @@
         "ice for serving"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/03/Orange-Margarita-009-368x368.jpg",
-      "likeCount": 0,
+      "likeCount": 13,
       "recipeSource": "https://www.acouplecooks.com/Orange-Margarita/"
     },
     {
@@ -137,7 +137,7 @@
         "1 teaspoon Cointreau"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/04/Mimosa-002-368x368.jpg",
-      "likeCount": 25,
+      "likeCount": 27,
       "recipeSource": "https://www.acouplecooks.com/best-mimosa-with-prosecco/"
     },
     {
@@ -184,7 +184,7 @@
         "one lime wedge"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/12/Madras-Cocktail-008-368x368.jpg",
-      "likeCount": 7,
+      "likeCount": 10,
       "recipeSource": "https://www.acouplecooks.com/madras-cocktail/"
     },
     {
@@ -208,7 +208,7 @@
         "1 teaspoon grenadine"
       ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/04/Ward-8-Cocktail-002s-368x368.jpg",
-      "likeCount": 0,
+      "likeCount": 34,
       "recipeSource": "https://www.acouplecooks.com/ward-8-cocktail/"
     },
     {
@@ -250,27 +250,41 @@
       "ice": false,
       "glassType": "COCKTAIL",
       "instructions": "Add the dark rum, pineapple juice, Campari, lime juice, and simple syrup to a cocktail shaker and fill it with ice. Shake vigorously until cold. Strain into cocktail glass. Garnish with a pineapple wedge, pineapple leaves, or fresh mint.",
-      "ingredientsList": ["1/5 oz Dark Rum","1.5 oz. pineapple juice", "1 oz Campari",".5 oz lime juice",".5 oz simple syrup"],
+      "ingredientsList": [
+        "1/5 oz Dark Rum",
+        "1.5 oz. pineapple juice",
+        "1 oz Campari",
+        ".5 oz lime juice",
+        ".5 oz simple syrup"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/08/Jungle-Bird-004-368x368.jpg",
       "likeCount": 0,
       "recipeSource": "https://www.acouplecooks.com/Jungle-Bird/"
-      },    
-      {
+    },
+    {
       "id": 12,
       "name": "Whiskey Sour",
       "baseSpirit": "bourbon",
       "mixer": "orange",
       "simpleSyrup": true,
-      "garnish1": ["orange","peel"],
+      "garnish1": [
+        "orange",
+        "peel"
+      ],
       "extraGarnish": "cherry",
       "ice": true,
       "glassType": "OLD FASHIONED GLASS",
       "instructions": "Add the bourbon whiskey, lemon juice, and syrup to a cocktail shaker. Fill with a handful of ice and shake until very cold. Strain the drink into a lowball or Old Fashioned glass. Serve with ice, an orange peel and a cocktail cherry.",
-      "ingredientsList": ["2 oz. Whiskey", "1 oz. fresh lemon juice","3/4 oz. simple syrup", "ice for serving"],
+      "ingredientsList": [
+        "2 oz. Whiskey",
+        "1 oz. fresh lemon juice",
+        "3/4 oz. simple syrup",
+        "ice for serving"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/09/Whiskey-Sour-111s-368x368.jpg",
-      "likeCount": 2,
+      "likeCount": 10,
       "recipeSource": "https://www.acouplecooks.com/Whiskey-Sour/"
-    },    
+    },
     {
       "id": 13,
       "name": "Kentucky Mule",
@@ -285,9 +299,14 @@
       "ice": true,
       "glassType": "COPPER",
       "instructions": "In a copper mug or glass, pour in the bourbon, lime juice, and ginger beer. Add ice and garnish with a lime wedge and fresh mint. Serve immediately.",
-      "ingredientsList": ["2 oz. Bourbon Whiskey", ".5 oz fresh lime juice", "4 oz. ginger beer", "ice for serving"],
+      "ingredientsList": [
+        "2 oz. Bourbon Whiskey",
+        ".5 oz fresh lime juice",
+        "4 oz. ginger beer",
+        "ice for serving"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-069-368x368.jpg",
-      "likeCount": 8,
+      "likeCount": 9,
       "recipeSource": "https://www.acouplecooks.com/Kentucky-Mule/"
     },
     {
@@ -296,16 +315,25 @@
       "baseSpirit": "bourbon",
       "mixer": "lemon",
       "simpleSyrup": true,
-      "garnish1": ["lemon","twist"],
+      "garnish1": [
+        "lemon",
+        "twist"
+      ],
       "extraGarnish": "-",
       "ice": true,
       "glassType": "COCKTAIL",
       "instructions": "Place all ingredients in a cocktail shaker with a handful of ice and shake until cold. Strain the drink into a cocktail glass. Garnish with a lemon twist or orange twist.",
-      "ingredientsList": ["2 oz. Bourbon Whiskey", "1 oz. Cointreau" , ".5 oz. lemon juice", "1 teaspoon simple syrup"],
+      "ingredientsList": [
+        "2 oz. Bourbon Whiskey",
+        "1 oz. Cointreau",
+        ".5 oz. lemon juice",
+        "1 teaspoon simple syrup"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/05/Bourbon-Sidecar-002-368x368.jpg",
       "likeCount": 3,
       "recipeSource": "https://www.acouplecooks.com/bourbon-sidecar/"
-    },    {
+    },
+    {
       "id": 15,
       "name": "Gin and Tonic",
       "baseSpirit": "gin",
@@ -319,11 +347,15 @@
       "ice": true,
       "glassType": "COCKTAIL",
       "instructions": "Place all ingredients in a cocktail shaker with a handful of ice and shake until cold. Strain the drink into a cocktail glass. Garnish with a lemon twist or orange twist.",
-      "ingredientsList": ["2 oz. Gin", "4 oz. tonic water"],
+      "ingredientsList": [
+        "2 oz. Gin",
+        "4 oz. tonic water"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/03/Gin-and-Tonic-007-368x368.jpg",
       "likeCount": 7,
       "recipeSource": "https://www.acouplecooks.com/best-gin-and-tonic/"
-    },    {
+    },
+    {
       "id": 16,
       "name": "Tom Collins",
       "baseSpirit": "gin",
@@ -337,7 +369,13 @@
       "ice": true,
       "glassType": "HIGHBALL",
       "instructions": "Add the gin, syrup and lemon juice to a cocktail shaker with 4 ice cubes. Shake well until chilled. Strain the liquid into an ice filled glass, and top off the glass with soda water. Garnish with a lemon wheel and cocktail cherry.",
-      "ingredientsList": ["2 oz. Gin", "1 oz. simple syrup", "1 oz. lemon juice", "4 oz. seltzer", "ice for serving"],
+      "ingredientsList": [
+        "2 oz. Gin",
+        "1 oz. simple syrup",
+        "1 oz. lemon juice",
+        "4 oz. seltzer",
+        "ice for serving"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/12/Tom-Collins-001-368x368.jpg",
       "likeCount": 3,
       "recipeSource": "https://www.acouplecooks.com/tom-collins-cocktail/"
@@ -356,7 +394,12 @@
       "ice": true,
       "glassType": "COCKTAIL",
       "instructions": "Add gin, lime juice, and syrup to a cocktail shaker. Fill with ice and shake until cold. Strain into glass and top with a splash of soda water, if desired. Garnish with a lime wheel and serve.",
-      "ingredientsList": ["2 oz. Gin"," .5 oz. lime juice",".5 oz. simple syrup","splash of soda water"],
+      "ingredientsList": [
+        "2 oz. Gin",
+        " .5 oz. lime juice",
+        ".5 oz. simple syrup",
+        "splash of soda water"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005-368x368.jpg",
       "likeCount": 6,
       "recipeSource": "acouplecooks.com/gin-gimlet-cocktail/"
@@ -375,9 +418,13 @@
       "ice": true,
       "glassType": "COCKTAIL",
       "instructions": "Fill a glass with ice. Place the gin, grapefruit juice, and syrup in a cocktail shaker with 4 ice cubes and shake until cold. Strain it into the glass. Garnish with a grapefruit wedge and rosemary branch (if desired).",
-      "ingredientsList": ["1.5 oz. of Gin", "3 oz. of grapefruit juice", "1 teaspoon simple syrup"],
+      "ingredientsList": [
+        "1.5 oz. of Gin",
+        "3 oz. of grapefruit juice",
+        "1 teaspoon simple syrup"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2020/01/Greyhound-Cocktail-004-368x368.jpg",
-      "likeCount": 4,
+      "likeCount": 5,
       "recipeSource": "https://www.acouplecooks.com/greyhound-cocktail/"
     },
     {
@@ -394,7 +441,12 @@
       "ice": true,
       "glassType": "HIGHBALL",
       "instructions": "Add all ingredients to a cocktail shaker or cocktail mixing glass and stir with ice. Strain into a highball glass filled with ice. If desired, garnish with an orange wedge and cherry.",
-      "ingredientsList": ["2 oz. aged Rum", "2 oz. orange juice"," .5 oz. lime juice",".5 oz. grenadine"],
+      "ingredientsList": [
+        "2 oz. aged Rum",
+        "2 oz. orange juice",
+        " .5 oz. lime juice",
+        ".5 oz. grenadine"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2021/07/Rum-and-Orange-Juice-005-368x368.jpg",
       "likeCount": 4,
       "recipeSource": "https://www.acouplecooks.com/rum-and-orange-juice/"
@@ -413,9 +465,15 @@
       "ice": true,
       "glassType": "MARTINI",
       "instructions": "Place the vodka, cranberry juice, Cointreau, lemon juice, and syrup in a cocktail shaker with ice. Shake 15 seconds until cold. Strain the liquid into a martini glass. Squeeze with the lime wedge and serve, garnished with a lime wheel if desired. ",
-      "ingredientsList": ["1 oz. vodka", "1 oz. cranberry juice",".5 oz. contreau", "lime wedge", "1 teaspoon simple syrup"],
+      "ingredientsList": [
+        "1 oz. vodka",
+        "1 oz. cranberry juice",
+        ".5 oz. contreau",
+        "lime wedge",
+        "1 teaspoon simple syrup"
+      ],
       "imageURL": "https://www.acouplecooks.com/wp-content/uploads/2019/12/Cosmopolitan-Cocktail-006-368x368.jpg",
-      "likeCount": 3,
+      "likeCount": 6,
       "recipeSource": "https://www.acouplecooks.com/cosmopolitan-cocktail/"
     }
   ]

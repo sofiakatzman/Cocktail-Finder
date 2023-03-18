@@ -12,10 +12,10 @@ form.addEventListener('submit', (event) => {
   event.preventDefault()
 
   // //below line clears the recipe cards or error message that are being displayed so only new results are seen
-  // document.querySelectorAll('.card').forEach(e => e.remove());
+  document.querySelectorAll('.card').forEach(e => e.remove());
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
-  //this captures the values that were entered at time of furm submission
+  //this captures the values that were entered at time of form submission
   const selectedSpiritBase = dropdownSpiritBase.value
   const selectedMixer = dropdownMixer.value
 
@@ -87,11 +87,14 @@ function displayRecipeCard(recipe){
     divCollect.append(divCard)
 
 
-    // event listener for like button being clicked
+    // event listener for like button being clicked & changes it's color for one mili se
     divCard.querySelector('.like-btn').addEventListener('click', () => {
       recipe.likeCount += 1;
       pLikes.innerText = `Recipe Likes: ${recipe.likeCount}`
+      setTimeout(() =>  btn.classList.toggle("likeClick"), 100)
+      btn.classList.toggle("likeClick")
 
+      //fetch request to update server db per like status
       fetch (`http://localhost:3000/recipes/${recipe.id}`, {
         method: 'PATCH',
         headers: {
@@ -101,13 +104,12 @@ function displayRecipeCard(recipe){
         body: JSON.stringify(recipe)
       })
       .then (res => res.json())
-      .then(recipe => console.log(recipe))
+      .then()
     })
+}
 
-    //fetch request to update server db per like status
 
 
-    }
 
 
 

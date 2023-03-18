@@ -7,7 +7,7 @@ Cocktail Recipe Finder App for Phase 1 Project Assignment
 
 Cocktail Finder is a cocktail recipe finder app that will match you with a cocktail recipe based on your choice of base spirit and mixer. 
 
-Pending Feature: Users can like cocktails and their likes are stored.
+Offered Feature: Users can "like" cocktails. Likes are stored in server. 
 
 Pending Feature: Hovering over a cocktail will change it's shadow's appearance
 
@@ -91,13 +91,14 @@ Daily Work Log:
 3/16/23
 - added dom clearout at new form submission
 - added "try again error" that clears out after every new form submission
+- finalize "like" feature - wrote code but not yet working with fetch patch **
 
+
+3/17/23
+- implemented remainder of database = 20 different recipies now loaded!!
+- tweaked style attributes ; happy with over aesthetic 
 
 PENDING GOALS: 
-- finalize "like" feature - wrote code but not yet working with fetch patch **
 - add one more event listener -- either no added sugar or non pure css hover (change css class event listener)
-- implement remainder of database - 10 / 20 currently
-- create style attributes to display content nicely
-
 
 

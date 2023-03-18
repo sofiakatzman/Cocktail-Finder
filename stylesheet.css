@@ -1,3 +1,8 @@
+body {
+  background-color: rgba(234, 254, 255, 0.687);
+  text-align: center;
+}
+
 h3 {
  color: green;   
 }
@@ -9,12 +14,12 @@ h4 {
 
  }
  
-
 .card {
   text-align: left;
   border: rgb(149, 201, 17) solid 1px;
+  background-color:rgb(216, 232, 178);
   padding: 1rem;
-  width: 20rem;
+  width: 25rem;
   height: 50rem;
   display: inline-grid;
   margin: 1rem 2rem;
@@ -27,6 +32,16 @@ h4 {
   width: auto;
 }
 
-div.card:hover {
-  background-color: yellow;
+.like-btn {
+  background-color:#70c0a4;
+  color: #f3f3f3;
+  border:rgb(149, 201, 17) solid 1px;
+  border-radius:10px;
 }
+
+.likeClick {
+    background-color:#cd8fb4;
+    color: #ddc422;
+    border:none;
+    border-radius:10px;
+  }
