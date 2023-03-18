@@ -72,10 +72,7 @@ For any questions or support, please reach out to katzmansof@gmail.com .
 
 # Project Status 
 
-Still getting all files and directory set up. 
-This is my initial README template to be updated closer to project completion. 
-
-Last Update: 3/15/23
+Last Update: 3/18/23
 
 Daily Work Log: 
 3/15/23 - GOAL: Initialize all files(html, css, js, db)
