@@ -1,7 +1,16 @@
 //sends request for data from server
 const url = "http://localhost:3000/recipes"
 
-//DOM element selectors that collect user filter labels
+
+//event listener that displays all recipie cards when DOM Content Loaded = true
+addEventListener("DOMContentLoaded", () => {
+  fetch(url)
+  .then(response => response.json())
+  .then(data => {
+    data.forEach(recipe => { displayRecipeCard(recipe)  })})
+  });
+
+  //DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
 const dropdownSpiritBase = document.querySelector('#dropdownSpiritBase')
 const dropdownMixer = document.querySelector('#dropdownMixer')
@@ -46,22 +55,19 @@ function displayError(){
 
 function displayRecipeCard(recipe){
   // creates a heading for drink name
+  const h4 = document.createElement('h4')
+  h4.innerText = recipe.name 
+
+  // creates haeding for ingredients
   const h5 = document.createElement('h5')
   h5.innerText= "Ingredients:";
-  const h4 = document.createElement('h4')
-  h4.innerText = recipe.name
 
   // displays drink photo
   const img = document.createElement('img')
     img.setAttribute('src', recipe.imageURL)
     img.setAttribute('class', 'recipe-photo')
 
-  //creates a paragraph element that can hold drink likes  
-    const pLikes = document.createElement('p')
-    pLikes.setAttribute('class', 'pLikes')
-    pLikes.innerText = `Likes: ${recipe.likeCount}`
-
-  //trying to create a list of ingredients as li elements - for each loop because it is an array of ingredients
+  //creates a list of ingredients as li elements - for each loop because it is an array of ingredients ** reduce to map later **
       const ul = document.createElement("ul");
       const ingredients = recipe.ingredientsList
       ingredients.forEach(item => {
@@ -74,11 +80,16 @@ function displayRecipeCard(recipe){
    const p = document.createElement("p")
     p.innerText = recipe.instructions
 
+    //creates a paragraph element that can hold drink likes  
+    const pLikes = document.createElement('p')
+    pLikes.setAttribute('class', 'pLikes')
+    pLikes.innerText = `Likes: ${recipe.likeCount}`
+
   //creates like button 
     const btn = document.createElement('button')
     btn.setAttribute('class', 'like-btn')
     btn.setAttribute('id', `${recipe.id}`)
-    btn.innerText = "like"
+    btn.innerText = "like";
 
   //puts all new elements together into one card
     const divCard = document.createElement('div')
@@ -87,7 +98,7 @@ function displayRecipeCard(recipe){
     divCollect.append(divCard)
 
     //event listener for card  being hovered over - will change its background color
-    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "background-color:rgb(216, 232, 178);"));
+    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "background-color:rgb(235, 245, 210, 10); box-shadow: 15px 15px #e397e097"));
     divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "background-color:white;"));
 
     // event listener for like button being clicked & changes it's color for one mili se
@@ -103,8 +114,7 @@ function displayRecipeCard(recipe){
         headers: {
             'Content-Type': 'application/json'
         },
-  
-        body: JSON.stringify(recipe)
+          body: JSON.stringify(recipe)
       })
       .then (res => res.json())
       .then()

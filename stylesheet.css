@@ -13,23 +13,36 @@ h4 {
   color: rgb(9, 94, 94);
   font-size: 20px;
   text-align: center;  
+  margin: 15px;
  }
  
+ h5 {
+  font-size: 15px;
+  text-align: center; 
+  margin: 0px; 
+ }
+
 .card {
   text-align: left;
   border: rgb(149, 201, 17) solid 1px;
   background-color:white;
   padding: 1rem;
   width: 25rem;
-  height: 50rem;
+  height: 55rem;
   display: inline-grid;
-  margin: 2rem 1rem;
-  box-shadow: 10px 8px #70c0a4
+  margin: 2rem 3rem;
+  /* box-shadow: 15px 15px #70c0a4 */
 }
+
+/* .card:hover {
+  box-shadow: 15px 15px #e397e097
+  
+} */
+
 
 .recipe-photo {
   justify-self: center;
-  border: rgba(242, 246, 220, 0.75)  solid 20px;
+  border: rgba(161, 207, 225, 0.69)  solid 20px;
   height: 12rem;
   width: auto;
 }
@@ -37,8 +50,11 @@ h4 {
 .like-btn {
   background-color:#70c0a4;
   color: #f3f3f3;
-  border:rgb(149, 201, 17) solid 1px;
+  border:rgb(235, 245, 210) solid 1px;
   border-radius:10px;
+  height: 50px;
+  bottom:0;
+  right:0;
 }
 
 .likeClick {
