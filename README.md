@@ -40,7 +40,6 @@ App features :
 
 - Scroll through our database of drinks!
 
-// GIF HERE 
 ![Gif of Scrolling through App](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWMxNWM1MWJmNjU5YWY4MTM1YmI0MTdmNTI1N2QzMjIzZTNkYWQ1OSZjdD1n/ky7fp8RSI73NzASkH7/giphy.gif)
 
 
@@ -52,13 +51,13 @@ App features :
 
 - "Like" any of our drinks. The display count is a collective amount between all of our users. 
 
-// GIF HERE 
+
 ![Gif of using like feature on App](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdkZDgxNjUwMTZjNTJmMzMyMDhlMGU0NjZlZGUzMGNjYTM3MzM5NyZjdD1n/oVKLcUQFqrWnq2Za7P/giphy.gif)
 
 
 - Easily accreess all recipies with the click of a button! 
 
-// GIF HERE 
+
 ![Gif of clicking a button that causes all recipes to be displayed on screen](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2I3ZWI2MGViODFkM2I3MzU3YmRiOWIxNmYxMGNhZTY4MzFjOTM1YyZjdD1n/BtOtsrUj7qr3chxmUb/giphy.gif)
 
 
@@ -119,7 +118,11 @@ Daily Work Log:
 - tweaked style attributes ; happy with over aesthetic 
 - added event listener for cards to change colors when the mouse hovers over them
 
+3/18/23
+- added reset button 
+- created and added gifs for README
+
 PENDING GOALS: 
 - clean code 
-- update README - make gif of app functionality & stills for features usage 
+
 
