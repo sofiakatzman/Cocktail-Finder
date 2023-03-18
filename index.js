@@ -25,13 +25,12 @@ form.addEventListener('submit', (event) => {
   .then(data => {
     data.forEach(recipe => { 
 
-      //function that checks if json results match form filters
-      if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
-          displayRecipeCard(recipe)  
-          console.log(recipe.name)
-        }},        
-        )
-       displayError()},)
+  //function that checks if json results match form filters
+    if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
+      displayRecipeCard(recipe)  
+      }},        
+      )
+      displayError()},)
   .catch(error => console.error(error))
 })
 
@@ -43,7 +42,7 @@ function displayError(){
   tryAgainDiv.setAttribute('class','no-match')
   tryAgainDiv.innerText = "No luck! Please try a different combination!"
   divCollect.appendChild(tryAgainDiv)
-  }}
+}}
 
 function displayRecipeCard(recipe){
   // creates a heading for drink name
@@ -68,7 +67,7 @@ function displayRecipeCard(recipe){
         const li = document.createElement("li")
         li.textContent = item
         ul.appendChild(li)
-      })
+  })
 
   //displays instructions
    const p = document.createElement("p")
@@ -86,6 +85,9 @@ function displayRecipeCard(recipe){
     divCard.append(h4, img, h5, ul, p, pLikes, btn)
     divCollect.append(divCard)
 
+    //event listener for card  being hovered over - will change its background color
+    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "background-color:rgb(216, 232, 178);"));
+    divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "background-color:white;"));
 
     // event listener for like button being clicked & changes it's color for one mili se
     divCard.querySelector('.like-btn').addEventListener('click', () => {
@@ -107,71 +109,3 @@ function displayRecipeCard(recipe){
       .then()
     })
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// function updateDonation(animalObject){
-// fetch (`http://localhost:3000/recipes/${buttonId}`, {
-//   method: 'POST',
-//   headers: {
-//       'Content-Type': 'application/json'
-//   },
-
-//   body: JSON.stringify()
-
-// })
-
-// }
-
-
-
-
-
-
-  //   fetch(`http://localhost:3000/recipes/${recipeId}`)
-//       .then(response => response.json())
-//       .then(data => {
-//         // Find the recipe you want to update in the data array
-//         const recipeToUpdate = data.find(recipe => recipe.id === recipeId);
-//         if (recipeToUpdate === null) {
-//           console.log(`Could not find recipe with ID ${recipeId}`);
-//           return;
-//         }
-//         // Update the number of likes for the recipe
-//         recipeToUpdate.likeCount += 1;
-
-//         // Send a PATCH request to update the recipe on the server
-//         fetch(`http://localhost:3000/recipes/${recipeToUpdate.id}`, {
-//           method: 'PATCH',
-//           headers: {
-//             'content-type': 'application/json'
-//           },
-//           body: JSON.stringify(recipeToUpdate)
-//         })
-//         .then(res => res.json())
-//         .then(updatedRecipe => console.log(updatedRecipe));
-//   //     });

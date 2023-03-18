@@ -11,23 +11,27 @@ h4 {
   color: rgb(9, 94, 94);
   font-size: 26px;
   text-align: center;  
-
  }
  
 .card {
   text-align: left;
   border: rgb(149, 201, 17) solid 1px;
-  background-color:rgb(216, 232, 178);
+  background-color:white;
   padding: 1rem;
   width: 25rem;
   height: 50rem;
   display: inline-grid;
   margin: 1rem 2rem;
   box-shadow: 10px 8px #70c0a4
-} 
+}
+
+.cardHover {
+  box-shadow: 10px 8px #e489dc
+}
 
 .recipe-photo {
   justify-self: center;
+  border: rgba(242, 246, 220, 0.75)  solid 20px;
   height: 12rem;
   width: auto;
 }
@@ -45,3 +49,4 @@ h4 {
     border:none;
     border-radius:10px;
   }
+
