@@ -11,8 +11,8 @@ let divCollect = document.querySelector('#recipe-display')
 form.addEventListener('submit', (event) => {
   event.preventDefault()
 
-  //below line clears the recipe cards or error message that are being displayed so only new results are seen
-  document.querySelectorAll('.card').forEach(e => e.remove());
+  // //below line clears the recipe cards or error message that are being displayed so only new results are seen
+  // document.querySelectorAll('.card').forEach(e => e.remove());
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
   //this captures the values that were entered at time of furm submission
