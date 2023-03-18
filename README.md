@@ -1,6 +1,6 @@
-# phase-1-project-cocktail-recipe-finder
+# Cocktail Recipe Finder
 
-Cocktail Recipe Finder App for Phase 1 Project Assignment
+Cocktail Recipe Finder App for Phase 1 Project Assignment by Sofia Katzman
 
 
 # Description:  
@@ -16,7 +16,9 @@ Features:
 ## Installation
 
 Cocktail Finder requires a server conection to it's db.json file in order for the application to work. 
-NPM built a full fake rest API JSON Server for backend prototyping and details can be found here: https://www.npmjs.com/package/json-server?activeTab=readme
+NPM built a full fake rest API JSON Server for backend prototyping and details can be found here: 
+https://www.npmjs.com/package/json-server?activeTab=readme
+
 Please follow the below instructions to install and connect to this server. 
 
 #1. Installing NPM JSON SERVER
@@ -32,9 +34,11 @@ In your terminal, initialize the server connection by entering the below code in
 Once the below screen is seen, you can open the index.html file on your preferred browser to use this app.
 
 
-## Usage Visuals
+![server connection successful prompt on command terminal](https://i.ibb.co/jJJhvzv/Local-Server-Connection-Successful-Photo.png)
 
-// Usage Features PENDING
+
+
+## Usage Visuals
 
 App features : 
 
@@ -42,21 +46,16 @@ App features :
 
 ![Gif of Scrolling through App](https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExZWMxNWM1MWJmNjU5YWY4MTM1YmI0MTdmNTI1N2QzMjIzZTNkYWQ1OSZjdD1n/ky7fp8RSI73NzASkH7/giphy.gif)
 
-
 - Filter recipes by choosing your favoritee base alchohol & mixer combination. 
 
 ![Gif of using filter function on App](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExNGRjMmM5YWZhY2YyOTM3YTUzNmIxNDhkOGRkMDJjYTE0ZjdkOThhYyZjdD1n/TuMkQcS5mcS38DRT11/giphy.gif)
 
 
-
 - "Like" any of our drinks. The display count is a collective amount between all of our users. 
-
 
 ![Gif of using like feature on App](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExMjdkZDgxNjUwMTZjNTJmMzMyMDhlMGU0NjZlZGUzMGNjYTM3MzM5NyZjdD1n/oVKLcUQFqrWnq2Za7P/giphy.gif)
 
-
 - Easily accreess all recipies with the click of a button! 
-
 
 ![Gif of clicking a button that causes all recipes to be displayed on screen](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2I3ZWI2MGViODFkM2I3MzU3YmRiOWIxNmYxMGNhZTY4MzFjOTM1YyZjdD1n/BtOtsrUj7qr3chxmUb/giphy.gif)
 
