@@ -54,11 +54,12 @@ function displayRecipeCard(recipe){
   // displays drink photo
   const img = document.createElement('img')
     img.setAttribute('src', recipe.imageURL)
-
-  //creates a paragraph element that can hold drink ingredients
     img.setAttribute('class', 'recipe-photo')
+
+  //creates a paragraph element that can hold drink likes  
     const pLikes = document.createElement('p')
-    pLikes.innerText = `Recipe Likes: ${recipe.likeCount}`
+    pLikes.setAttribute('class', 'pLikes')
+    pLikes.innerText = `Likes: ${recipe.likeCount}`
 
   //trying to create a list of ingredients as li elements - for each loop because it is an array of ingredients
       const ul = document.createElement("ul");
@@ -92,7 +93,7 @@ function displayRecipeCard(recipe){
     // event listener for like button being clicked & changes it's color for one mili se
     divCard.querySelector('.like-btn').addEventListener('click', () => {
       recipe.likeCount += 1;
-      pLikes.innerText = `Recipe Likes: ${recipe.likeCount}`
+      pLikes.innerText = `Likes: ${recipe.likeCount}`
       setTimeout(() =>  btn.classList.toggle("likeClick"), 100)
       btn.classList.toggle("likeClick")
 
