@@ -18,13 +18,14 @@ h4 {
   font-size: 20px;
   text-align: center;  
   margin: 2px;
-letter-spacing: 1px;
+  letter-spacing: 1px;
  }
  
  h5 {
   font-size: 15px;
   text-align: center; 
-  margin: 0px; 
+  margin: 0px;
+  letter-spacing: 1px; 
  }
 
 p {

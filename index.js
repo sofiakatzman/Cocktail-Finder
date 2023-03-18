@@ -2,15 +2,19 @@
 const url = "http://localhost:3000/recipes"
 
 
-//event listener that displays all recipie cards when DOM Content Loaded = true
-addEventListener("DOMContentLoaded", () => {
+//handles Loading Cards to page
+function handleCardLoad() {
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    data.forEach(recipe => { displayRecipeCard(recipe)  })})
-  });
+    data.forEach(recipe => { displayRecipeCard(recipe)})})
+  }
 
-  //DOM element selectors that collect user filter labels
+//event listener that displays all recipie cards when DOM Content Loaded = true
+addEventListener("DOMContentLoaded", handleCardLoad());
+
+ 
+//DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
 const dropdownSpiritBase = document.querySelector('#dropdownSpiritBase')
 const dropdownMixer = document.querySelector('#dropdownMixer')
@@ -18,9 +22,9 @@ let divCollect = document.querySelector('#recipe-display')
 
 //event listener that waits for button to be clicked to store the filter label data
 form.addEventListener('submit', (event) => {
-  event.preventDefault()
+  event.preventDefault() //prevents page refresh
 
-  // //below line clears the recipe cards or error message that are being displayed so only new results are seen
+  // //below lines clear the recipe cards or error message that are being displayed so only new results are seen
   document.querySelectorAll('.card').forEach(e => e.remove())
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
@@ -39,18 +43,19 @@ form.addEventListener('submit', (event) => {
       displayRecipeCard(recipe)  
       }},        
       )
-      displayError()},)
+      handleError()},)
   .catch(error => console.error(error))
 })
 
 //function that checks for results, if there are none then it displays a "try again" error
-function displayError(){
+function handleError(){
   let checkH5 = document.querySelector('h5')
   if (checkH5 === null){
   const tryAgainDiv = document.createElement('div')
   tryAgainDiv.setAttribute('class','no-match')
-  tryAgainDiv.innerText = "No luck! Please try a different combination!"
+  tryAgainDiv.innerHTML = "No luck! Please try a different combination!<br><br>"
   divCollect.appendChild(tryAgainDiv)
+ 
 }}
 
 function displayRecipeCard(recipe){
@@ -121,3 +126,19 @@ function displayRecipeCard(recipe){
       .then()
     })
 }
+
+//add reset button to the bottom of the page 
+const resetBtn = document.createElement('button');
+resetBtn.innerText = 'Reset Recipes';
+
+// Add the reset button to the footer element so that it is always at the bottom of page
+const footer = document.querySelector('footer');
+footer.appendChild(resetBtn);
+
+//event listener for reset button
+resetBtn.addEventListener('click', (event) => {
+  event.preventDefault();
+  handleCardLoad();
+  console.log('reset clicked');
+  document.querySelectorAll('.no-match').forEach(e => e.remove())
+});
