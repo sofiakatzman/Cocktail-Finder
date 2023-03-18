@@ -21,7 +21,7 @@ form.addEventListener('submit', (event) => {
   event.preventDefault()
 
   // //below line clears the recipe cards or error message that are being displayed so only new results are seen
-  document.querySelectorAll('.card').forEach(e => e.remove());
+  document.querySelectorAll('.card').forEach(e => e.remove())
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
   //this captures the values that were entered at time of form submission
@@ -56,11 +56,11 @@ function displayError(){
 function displayRecipeCard(recipe){
   // creates a heading for drink name
   const h4 = document.createElement('h4')
-  h4.innerText = recipe.name 
+  h4.innerText = recipe.name.toUpperCase() 
 
   // creates haeding for ingredients
   const h5 = document.createElement('h5')
-  h5.innerText= "Ingredients:";
+  h5.innerText= "INGREDIENTS:"
 
   // displays drink photo
   const img = document.createElement('img')
@@ -68,7 +68,7 @@ function displayRecipeCard(recipe){
     img.setAttribute('class', 'recipe-photo')
 
   //creates a list of ingredients as li elements - for each loop because it is an array of ingredients ** reduce to map later **
-      const ul = document.createElement("ul");
+      const ul = document.createElement("ul")
       const ingredients = recipe.ingredientsList
       ingredients.forEach(item => {
         const li = document.createElement("li")
@@ -83,28 +83,29 @@ function displayRecipeCard(recipe){
     //creates a paragraph element that can hold drink likes  
     const pLikes = document.createElement('p')
     pLikes.setAttribute('class', 'pLikes')
-    pLikes.innerText = `Likes: ${recipe.likeCount}`
+    pLikes.innerText = `${recipe.likeCount} likes `
 
   //creates like button 
     const btn = document.createElement('button')
     btn.setAttribute('class', 'like-btn')
     btn.setAttribute('id', `${recipe.id}`)
-    btn.innerText = "like";
+    btn.innerText = "like"
 
   //puts all new elements together into one card
     const divCard = document.createElement('div')
     divCard.setAttribute('class', 'card')
-    divCard.append(h4, img, h5, ul, p, pLikes, btn)
+    btn.append(pLikes)
+    divCard.append(h4, img, h5, ul, p, btn)
     divCollect.append(divCard)
 
-    //event listener for card  being hovered over - will change its background color
-    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "background-color:rgb(235, 245, 210, 10); box-shadow: 15px 15px #e397e097"));
-    divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "background-color:white;"));
+    //event listener for card  being hovered over - will change its shadow color and then clear out
+    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "box-shadow: 20px 20px #e2f0d2d6"))
+    divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "box-shadow: 0px 0px"))
 
     // event listener for like button being clicked & changes it's color for one mili se
     divCard.querySelector('.like-btn').addEventListener('click', () => {
       recipe.likeCount += 1;
-      pLikes.innerText = `Likes: ${recipe.likeCount}`
+      pLikes.innerText = `${recipe.likeCount} likes`
       setTimeout(() =>  btn.classList.toggle("likeClick"), 100)
       btn.classList.toggle("likeClick")
 

@@ -7,16 +7,17 @@ Cocktail Recipe Finder App for Phase 1 Project Assignment
 
 Cocktail Finder is a cocktail recipe finder app that will match you with a cocktail recipe based on your choice of base spirit and mixer. 
 
-Offered Feature: Users can "like" cocktails. Likes are stored in server. 
+Features: 
 
-Pending Feature: Hovering over a cocktail will change it's shadow's appearance
+- Users can "like" cocktails. Likes are stored in server. 
+- Users can filter different cocktail / mixer combinations. 
 
 
 ## Installation
 
 Cocktail Finder requires a server conection to it's db.json file in order for the application to work. 
 NPM built a full fake rest API JSON Server for backend prototyping and details can be found here: https://www.npmjs.com/package/json-server?activeTab=readme
-Please follow the below instructions to install and connec to this server. 
+Please follow the below instructions to install and connect to this server. 
 
 #1. Installing NPM JSON SERVER
 To install the JSON Server, please run the below command in your terminal: 
@@ -35,6 +36,7 @@ Once the below screen is seen, you can open the index.html file on your preferre
 
 
 // GIF OF APP WALKTHROUGH PENDING
+
 
 ## Usage
 
@@ -61,7 +63,7 @@ Source URLs can be found in //FILE NAME HERE TBD//
 
 ## Acknowledgement
 
-Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are from. 
+Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are all from. 
 Their contnt contributions have made this application possible. 
 
 
@@ -99,5 +101,5 @@ Daily Work Log:
 
 PENDING GOALS: 
 - clean code 
-- update README 
+- update README - make gif of app functionality & stills for features usage 
 
