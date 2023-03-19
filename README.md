@@ -136,5 +136,5 @@ PENDING GOALS:
                 2. Hover -> Shadow on recipe card ✓
                 3. Click -> Like ✓
         - Must implement at least one instance of array iteration using available array methods (map, forEach or filter)  ✓
-        - Keep code dry - use functions to abstract repetitive code ✓
+        - Keep code dry - use functions to abstract repetitive code 
         
