@@ -37,7 +37,6 @@ Once the below screen is seen, you can open the index.html file on your preferre
 ![server connection successful prompt on command terminal](https://i.ibb.co/jJJhvzv/Local-Server-Connection-Successful-Photo.png)
 
 
-
 ## Usage Visuals
 
 App features : 
@@ -60,14 +59,12 @@ App features :
 ![Gif of clicking a button that causes all recipes to be displayed on screen](https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY2I3ZWI2MGViODFkM2I3MzU3YmRiOWIxNmYxMGNhZTY4MzFjOTM1YyZjdD1n/BtOtsrUj7qr3chxmUb/giphy.gif)
 
 
-
 ## Contributing
 
 Pull requests are welcome for reiew. 
 No major changes are allowed. 
 
 Please reach out to support if you have any questions. 
-
 
 ## License
 
@@ -76,14 +73,12 @@ For any questions, please reach out to our support team.
 
 ## References
 
-All images, recipe names and instructions belong to //URL-HERE//
-Source URLs can be found in //FILE NAME HERE TBD//
+All images, recipe names and instructions belong to "A COUPLE COOKS"
+Source URLs can be found in file: sources.txt
 
 ## Acknowledgement
 
-Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are all from. 
-Their contnt contributions have made this application possible. 
-
+Thank you to "A COUPLE COOKS" for their incredible blog from where the recipes and photographs used in this app are all from. Their contnt contributions have made this application possible. 
 
 ## Support
 
