@@ -1,22 +1,22 @@
 Recipe Name - Source URL - Image URL
 
-Screwdriver		-	https://www.acouplecooks.com/screwdriver-drink/				-	https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg
-Vodka Sunrise	-	https://www.acouplecooks.com/Vodka-Sunrise/				-	https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg
-Tequila Sunrise 	-	https://www.acouplecooks.com/Tequila-Sunrise/				-	https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg
-Margarita		-	https://www.acouplecooks.com/margarita-mix/				-	https://www.acouplecooks.com/wp-content/uploads/2020/02/Virgin-Margarita-008-368x368.jpg
-Orange Margarita	-	https://www.acouplecooks.com/Orange-Margarita/				-	https://www.acouplecooks.com/wp-content/uploads/2021/03/Orange-Margarita-009-368x368.jpg
-Mimosa		-	https://www.acouplecooks.com/best-mimosa-with-prosecco/		-	https://www.acouplecooks.com/wp-content/uploads/2020/04/Mimosa-002-368x368.jpg
+Screwdriver		-	https://www.acouplecooks.com/screwdriver-drink/				    -	https://www.acouplecooks.com/wp-content/uploads/2021/02/Screwdriver-001s-368x368.jpg
+Vodka Sunrise	-	https://www.acouplecooks.com/Vodka-Sunrise/				        -	https://www.acouplecooks.com/wp-content/uploads/2021/12/Vodka-Sunrise-001-368x368.jpg
+Tequila Sunrise -	https://www.acouplecooks.com/Tequila-Sunrise/				    -	https://www.acouplecooks.com/wp-content/uploads/2020/04/Tequila-Sunrise-003s-368x368.jpg
+Margarita		-	https://www.acouplecooks.com/margarita-mix/				        -	https://www.acouplecooks.com/wp-content/uploads/2020/02/Virgin-Margarita-008-368x368.jpg
+Orange Margarita-	https://www.acouplecooks.com/Orange-Margarita/				    -	https://www.acouplecooks.com/wp-content/uploads/2021/03/Orange-Margarita-009-368x368.jpg
+Mimosa		    -	https://www.acouplecooks.com/best-mimosa-with-prosecco/		    -	https://www.acouplecooks.com/wp-content/uploads/2020/04/Mimosa-002-368x368.jpg
 Garibaldi		-	https://www.acouplecooks.com/garibaldi-cocktail-campari-orange/	-	https://www.acouplecooks.com/wp-content/uploads/2020/10/Garibaldi-Cocktail-002-368x368.jpg
-Madras		-	https://www.acouplecooks.com/madras-cocktail/				-	https://www.acouplecooks.com/wp-content/uploads/2019/12/Madras-Cocktail-008-368x368.jpg
-Ward 8		-	https://www.acouplecooks.com/ward-8-cocktail/				-	https://www.acouplecooks.com/wp-content/uploads/2021/04/Ward-8-Cocktail-002s-368x368.jpg
-Siesta Cocktail	-	https://www.acouplecooks.com/Siesta-Cocktail/				-	https://www.acouplecooks.com/wp-content/uploads/2021/05/Siesta-Cocktail-001-368x368.jpg
-Jungle Bird		-	https://www.acouplecooks.com/Jungle-Bird/					-	https://www.acouplecooks.com/wp-content/uploads/2020/08/Jungle-Bird-004-368x368.jpg
-Whiskey Sour	-	https://www.acouplecooks.com/Whiskey-Sour/				-	https://www.acouplecooks.com/wp-content/uploads/2019/09/Whiskey-Sour-111s-368x368.jpg
-Kentucky Mule	-	https://www.acouplecooks.com/Kentucky-Mule/				-	https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-069-368x368.jpg
-Bourbon Sidecar	-	https://www.acouplecooks.com/bourbon-sidecar/				-	https://www.acouplecooks.com/wp-content/uploads/2020/05/Bourbon-Sidecar-002-368x368.jpg
-Gin and Tonic	-	https://www.acouplecooks.com/best-gin-and-tonic/			-	https://www.acouplecooks.com/wp-content/uploads/2020/03/Gin-and-Tonic-007-368x368.jpg
-Tom Collins		-	https://www.acouplecooks.com/tom-collins-cocktail/			-	https://www.acouplecooks.com/wp-content/uploads/2019/12/Tom-Collins-001-368x368.jpg
-Gin Gimlet		-	acouplecooks.com/gin-gimlet-cocktail/					-	https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005-368x368.jpg
-Greyhound		-	https://www.acouplecooks.com/greyhound-cocktail/			-	https://www.acouplecooks.com/wp-content/uploads/2020/01/Greyhound-Cocktail-004-368x368.jpg
-Rum and OJ		-	https://www.acouplecooks.com/rum-and-orange-juice/			-	https://www.acouplecooks.com/wp-content/uploads/2021/07/Rum-and-Orange-Juice-005-368x368.jpg
-Cosmopolitan	-	https://www.acouplecooks.com/cosmopolitan-cocktail/			-	https://www.acouplecooks.com/wp-content/uploads/2019/12/Cosmopolitan-Cocktail-006-368x368.jpg
+Madras		    -	https://www.acouplecooks.com/madras-cocktail/				    -	https://www.acouplecooks.com/wp-content/uploads/2019/12/Madras-Cocktail-008-368x368.jpg
+Ward 8		    -	https://www.acouplecooks.com/ward-8-cocktail/				    -	https://www.acouplecooks.com/wp-content/uploads/2021/04/Ward-8-Cocktail-002s-368x368.jpg
+Siesta Cocktail	-	https://www.acouplecooks.com/Siesta-Cocktail/				    -	https://www.acouplecooks.com/wp-content/uploads/2021/05/Siesta-Cocktail-001-368x368.jpg
+Jungle Bird		-	https://www.acouplecooks.com/Jungle-Bird/					    -	https://www.acouplecooks.com/wp-content/uploads/2020/08/Jungle-Bird-004-368x368.jpg
+Whiskey Sour	-	https://www.acouplecooks.com/Whiskey-Sour/				        -	https://www.acouplecooks.com/wp-content/uploads/2019/09/Whiskey-Sour-111s-368x368.jpg
+Kentucky Mule	-	https://www.acouplecooks.com/Kentucky-Mule/				        -	https://www.acouplecooks.com/wp-content/uploads/2019/06/Moscow-Mule-069-368x368.jpg
+Bourbon Sidecar	-	https://www.acouplecooks.com/bourbon-sidecar/				    -	https://www.acouplecooks.com/wp-content/uploads/2020/05/Bourbon-Sidecar-002-368x368.jpg
+Gin and Tonic	-	https://www.acouplecooks.com/best-gin-and-tonic/			    -	https://www.acouplecooks.com/wp-content/uploads/2020/03/Gin-and-Tonic-007-368x368.jpg
+Tom Collins		-	https://www.acouplecooks.com/tom-collins-cocktail/			    -	https://www.acouplecooks.com/wp-content/uploads/2019/12/Tom-Collins-001-368x368.jpg
+Gin Gimlet		-	acouplecooks.com/gin-gimlet-cocktail/					        -	https://www.acouplecooks.com/wp-content/uploads/2019/05/Gimlet-005-368x368.jpg
+Greyhound		-	https://www.acouplecooks.com/greyhound-cocktail/			    -	https://www.acouplecooks.com/wp-content/uploads/2020/01/Greyhound-Cocktail-004-368x368.jpg
+Rum and OJ		-	https://www.acouplecooks.com/rum-and-orange-juice/			    -	https://www.acouplecooks.com/wp-content/uploads/2021/07/Rum-and-Orange-Juice-005-368x368.jpg
+Cosmopolitan	-	https://www.acouplecooks.com/cosmopolitan-cocktail/			    -	https://www.acouplecooks.com/wp-content/uploads/2019/12/Cosmopolitan-Cocktail-006-368x368.jpg

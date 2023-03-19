@@ -119,4 +119,22 @@ Daily Work Log:
 PENDING GOALS: 
 - clean code 
 
+## Project Requirements 
 
+- A README.md file ✓
+- A detailed commit histort (+30 minimum) ✓
+- A video walkthrough of your app < 3 mins - PENDING 
+- A blog post - 85% Complete - about .map() method
+
+- App Must : 
+        - Be HTML/CSS/JS fronted that accesses data from an api or db.json file using json-server ✓
+        - Should return a colection of at least 5 objects with each having at least 3 attributes ✓
+        - All client / api interactions should be handled asynchronously and use json as the communication format ✓ 
+        - Run on a single page - no redirects or reloads ✓
+        - Use at least 3 distinct event listeners of different types that enable interactivity. Must be added through javascript and not be embedded to html elements or be css ✓ 
+                1. Form Submission -> Rendering of filtered recipies ✓
+                2. Hover -> Shadow on recipe card ✓
+                3. Click -> Like ✓
+        - Must implement at least one instance of array iteration using available array methods (map, forEach or filter)  ✓
+        - Keep code dry - use functions to abstract repetitive code ✓
+        
