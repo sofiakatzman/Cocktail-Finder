@@ -6,12 +6,11 @@ function handleCardLoad() {
   fetch(url)
   .then(response => response.json())
   .then(data => {
-    data.forEach(recipe => { displayRecipeCard(recipe)})})
+    data.forEach(recipe => displayRecipeCard(recipe))})
   }
 
 //event listener that displays all recipie cards when DOM Content Loaded = true
 addEventListener("DOMContentLoaded", handleCardLoad());
-
  
 //DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
@@ -23,7 +22,7 @@ let divCollect = document.querySelector('#recipe-display')
 form.addEventListener('submit', (event) => {
   event.preventDefault() //prevents page refresh
 
-  // //below lines clear the recipe cards or error message that are being displayed so only new results are seen
+  //below lines clear the recipe cards or error message that are being displayed so only new results are seen
   document.querySelectorAll('.card').forEach(e => e.remove())
   document.querySelectorAll('.no-match').forEach(e => e.remove())
 
@@ -37,12 +36,12 @@ form.addEventListener('submit', (event) => {
   .then(data => {
     data.forEach(recipe => { 
 
-  //function that checks if json results match form filters
+    //function that checks if json results match form filters and displays cards 
     if(recipe.baseSpirit === selectedSpiritBase && recipe.mixer === selectedMixer){
       displayRecipeCard(recipe)  
-      }},        
-      )
-      handleError()},)
+    }})
+      
+  handleError()},)
   .catch(error => console.error(error))
 })
 
@@ -61,56 +60,56 @@ function displayRecipeCard(recipe){
   const h4 = document.createElement('h4')
   h4.innerText = recipe.name.toUpperCase() 
 
-  // creates haeding for ingredients
+  // displays drink photo
+  const img = document.createElement('img')
+  img.setAttribute('src', recipe.imageURL)
+  img.setAttribute('class', 'recipe-photo')
+
+  // creates heading for ingredients
   const h5 = document.createElement('h5')
   h5.innerText= "INGREDIENTS:"
 
-  // displays drink photo
-  const img = document.createElement('img')
-    img.setAttribute('src', recipe.imageURL)
-    img.setAttribute('class', 'recipe-photo')
-
-  //creates a list of ingredients as li elements - for each loop because it is an array of ingredients ** reduce to map later - check which one is faster **
-      const ul = document.createElement("ul")
-      const ingredients = recipe.ingredientsList
-      ingredients.forEach(item => {
-        const li = document.createElement("li")
-        li.textContent = item
-        ul.appendChild(li)
+  //creates a list of ingredients as li elements 
+  const ul = document.createElement("ul")
+  const ingredients = recipe.ingredientsList
+  ingredients.forEach(item => {
+    const li = document.createElement("li")
+    li.textContent = item
+    ul.appendChild(li)
   })
 
   //displays instructions
-   const p = document.createElement("p")
-    p.innerText = recipe.instructions
+  const p = document.createElement("p")
+  p.innerText = recipe.instructions
 
-    //creates a paragraph element that can hold drink likes  
-    const pLikes = document.createElement('p')
-    pLikes.setAttribute('class', 'pLikes')
-    pLikes.innerText = `${recipe.likeCount} likes `
+  //creates a paragraph element that can hold drink likes  
+  const pLikes = document.createElement('p')
+  pLikes.setAttribute('class', 'pLikes')
+  pLikes.innerText = `${recipe.likeCount} likes`
 
   //creates like button 
-    const btn = document.createElement('button')
-    btn.setAttribute('class', 'like-btn')
-    btn.setAttribute('id', `${recipe.id}`)
-    btn.innerText = "like"
+  const btn = document.createElement('button')
+  btn.setAttribute('class', 'like-btn')
+  btn.setAttribute('id', `${recipe.id}`)
+  btn.innerText = "like"
 
   //puts all new elements together into one card
-    const divCard = document.createElement('div')
-    divCard.setAttribute('class', 'card')
-    btn.append(pLikes)
-    divCard.append(h4, img, h5, ul, p, btn)
-    divCollect.append(divCard)
+  const divCard = document.createElement('div')
+  divCard.setAttribute('class', 'card')
+  btn.append(pLikes)
+  divCard.append(h4, img, h5, ul, p, btn)
+  divCollect.append(divCard)
 
-    //event listener for card  being hovered over - will change its shadow color and then clear out
-    divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "box-shadow: 20px 20px #e2f0d2d6"))
-    divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "box-shadow: 0px 0px"))
+  //event listener for card  being hovered over - will change its shadow color and then clear out
+  divCard.addEventListener("mouseover", () => divCard.setAttribute("style", "box-shadow: 20px 20px #e2f0d2d6"))
+  divCard.addEventListener("mouseout", () => divCard.setAttribute("style", "box-shadow: 0px 0px"))
 
-    // event listener for like button being clicked & changes it's color for one mili se
-    divCard.querySelector('.like-btn').addEventListener('click', () => {
-      recipe.likeCount += 1;
-      pLikes.innerText = `${recipe.likeCount} likes`
-      setTimeout(() =>  btn.classList.toggle("likeClick"), 100)
-      btn.classList.toggle("likeClick")
+  // event listener for like button being clicked & changes it's color for one hundredth of a second
+  divCard.querySelector('.like-btn').addEventListener('click', () => {
+    recipe.likeCount += 1;
+    pLikes.innerText = `${recipe.likeCount} likes`
+    setTimeout(() =>  btn.classList.toggle("likeClick"), 100)
+    btn.classList.toggle("likeClick")
 
       //fetch request to update server db per like status
       fetch (`http://localhost:3000/recipes/${recipe.id}`, {
@@ -120,18 +119,18 @@ function displayRecipeCard(recipe){
         },
           body: JSON.stringify(recipe)
       })
-      .then (res => res.json())
-      .then()
+      // .then (res => res.json())
+      // .then()
     })
 }
 
 //add reset button
-const resetBtn = document.createElement('button');
-resetBtn.innerText = 'Reset Recipes';
+const resetBtn = document.createElement('button')
+resetBtn.innerText = 'view all recipes'
 
 // Add the reset button to the footer element so that it is always at the bottom of page
-const footer = document.querySelector('footer');
-footer.appendChild(resetBtn);
+const footer = document.querySelector('footer')
+footer.appendChild(resetBtn)
 
 //event listener for reset button
 resetBtn.addEventListener('click', (event) => {

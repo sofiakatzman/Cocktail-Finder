@@ -133,7 +133,7 @@ PENDING GOALS:
         - Run on a single page - no redirects or reloads ✓
         - Use at least 3 distinct event listeners of different types that enable interactivity. Must be added through javascript and not be embedded to html elements or be css ✓ 
                 1. Form Submission -> Rendering of filtered recipies ✓
-                2. Hover -> Shadow on recipe card ✓
+                2. Mouse Over -> Shadow on recipe card ✓
                 3. Click -> Like ✓
         - Must implement at least one instance of array iteration using available array methods (map, forEach or filter)  ✓
         - Keep code dry - use functions to abstract repetitive code 
