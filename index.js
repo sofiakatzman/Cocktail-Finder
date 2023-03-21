@@ -10,7 +10,7 @@ function handleCardLoad() {
   }
 
 //event listener that displays all recipie cards when DOM Content Loaded = true
-addEventListener("DOMContentLoaded", handleCardLoad());
+document.addEventListener("DOMContentLoaded", handleCardLoad);
  
 //DOM element selectors that collect user filter labels
 const form = document.querySelector('form')
